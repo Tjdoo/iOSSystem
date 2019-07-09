@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD29F72922BA3183009462DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F72822BA3183009462DB /* AppDelegate.m */; };
+		AD29F72C22BA3183009462DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F72B22BA3183009462DB /* ViewController.m */; };
+		AD29F72F22BA3183009462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD29F72D22BA3183009462DB /* Main.storyboard */; };
+		AD29F73122BA3186009462DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD29F73022BA3186009462DB /* Assets.xcassets */; };
+		AD29F73422BA3186009462DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD29F73222BA3186009462DB /* LaunchScreen.storyboard */; };
+		AD29F73722BA3186009462DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F73622BA3186009462DB /* main.m */; };
+		AD29F74122BA3186009462DB /* UILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F74022BA3186009462DB /* UILabelTests.m */; };
+		AD29F74C22BA3186009462DB /* UILabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F74B22BA3186009462DB /* UILabelUITests.m */; };
+		AD29F75B22BA31AF009462DB /* UILabel+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F75A22BA31AF009462DB /* UILabel+HTML.m */; };
+		ADB20CD022C1C5D5003EB727 /* EvenDistributionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB20CCF22C1C5D5003EB727 /* EvenDistributionLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD29F73D22BA3186009462DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29F71C22BA3183009462DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD29F72322BA3183009462DB;
+			remoteInfo = UILabel;
+		};
+		AD29F74822BA3186009462DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD29F71C22BA3183009462DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD29F72322BA3183009462DB;
+			remoteInfo = UILabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD29F72422BA3183009462DB /* UILabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD29F72722BA3183009462DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD29F72822BA3183009462DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD29F72A22BA3183009462DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD29F72B22BA3183009462DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD29F72E22BA3183009462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD29F73022BA3186009462DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD29F73322BA3186009462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD29F73522BA3186009462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD29F73622BA3186009462DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD29F73C22BA3186009462DB /* UILabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD29F74022BA3186009462DB /* UILabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelTests.m; sourceTree = "<group>"; };
+		AD29F74222BA3186009462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD29F74722BA3186009462DB /* UILabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD29F74B22BA3186009462DB /* UILabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelUITests.m; sourceTree = "<group>"; };
+		AD29F74D22BA3186009462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD29F75922BA31AF009462DB /* UILabel+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HTML.h"; sourceTree = "<group>"; };
+		AD29F75A22BA31AF009462DB /* UILabel+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HTML.m"; sourceTree = "<group>"; };
+		ADB20CCE22C1C5D5003EB727 /* EvenDistributionLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvenDistributionLabel.h; sourceTree = "<group>"; };
+		ADB20CCF22C1C5D5003EB727 /* EvenDistributionLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvenDistributionLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD29F72122BA3183009462DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F73922BA3186009462DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F74422BA3186009462DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD29F71B22BA3183009462DB = {
+			isa = PBXGroup;
+			children = (
+				AD29F72622BA3183009462DB /* UILabel */,
+				AD29F73F22BA3186009462DB /* UILabelTests */,
+				AD29F74A22BA3186009462DB /* UILabelUITests */,
+				AD29F72522BA3183009462DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD29F72522BA3183009462DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD29F72422BA3183009462DB /* UILabel.app */,
+				AD29F73C22BA3186009462DB /* UILabelTests.xctest */,
+				AD29F74722BA3186009462DB /* UILabelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD29F72622BA3183009462DB /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				AD29F75922BA31AF009462DB /* UILabel+HTML.h */,
+				AD29F75A22BA31AF009462DB /* UILabel+HTML.m */,
+				ADB20CCE22C1C5D5003EB727 /* EvenDistributionLabel.h */,
+				ADB20CCF22C1C5D5003EB727 /* EvenDistributionLabel.m */,
+				AD29F72722BA3183009462DB /* AppDelegate.h */,
+				AD29F72822BA3183009462DB /* AppDelegate.m */,
+				AD29F72A22BA3183009462DB /* ViewController.h */,
+				AD29F72B22BA3183009462DB /* ViewController.m */,
+				AD29F72D22BA3183009462DB /* Main.storyboard */,
+				AD29F73022BA3186009462DB /* Assets.xcassets */,
+				AD29F73222BA3186009462DB /* LaunchScreen.storyboard */,
+				AD29F73522BA3186009462DB /* Info.plist */,
+				AD29F73622BA3186009462DB /* main.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		AD29F73F22BA3186009462DB /* UILabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD29F74022BA3186009462DB /* UILabelTests.m */,
+				AD29F74222BA3186009462DB /* Info.plist */,
+			);
+			path = UILabelTests;
+			sourceTree = "<group>";
+		};
+		AD29F74A22BA3186009462DB /* UILabelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD29F74B22BA3186009462DB /* UILabelUITests.m */,
+				AD29F74D22BA3186009462DB /* Info.plist */,
+			);
+			path = UILabelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD29F72322BA3183009462DB /* UILabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD29F75022BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabel" */;
+			buildPhases = (
+				AD29F72022BA3183009462DB /* Sources */,
+				AD29F72122BA3183009462DB /* Frameworks */,
+				AD29F72222BA3183009462DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UILabel;
+			productName = UILabel;
+			productReference = AD29F72422BA3183009462DB /* UILabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD29F73B22BA3186009462DB /* UILabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD29F75322BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabelTests" */;
+			buildPhases = (
+				AD29F73822BA3186009462DB /* Sources */,
+				AD29F73922BA3186009462DB /* Frameworks */,
+				AD29F73A22BA3186009462DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD29F73E22BA3186009462DB /* PBXTargetDependency */,
+			);
+			name = UILabelTests;
+			productName = UILabelTests;
+			productReference = AD29F73C22BA3186009462DB /* UILabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD29F74622BA3186009462DB /* UILabelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD29F75622BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabelUITests" */;
+			buildPhases = (
+				AD29F74322BA3186009462DB /* Sources */,
+				AD29F74422BA3186009462DB /* Frameworks */,
+				AD29F74522BA3186009462DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD29F74922BA3186009462DB /* PBXTargetDependency */,
+			);
+			name = UILabelUITests;
+			productName = UILabelUITests;
+			productReference = AD29F74722BA3186009462DB /* UILabelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD29F71C22BA3183009462DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = D;
+				TargetAttributes = {
+					AD29F72322BA3183009462DB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AD29F73B22BA3186009462DB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AD29F72322BA3183009462DB;
+					};
+					AD29F74622BA3186009462DB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AD29F72322BA3183009462DB;
+					};
+				};
+			};
+			buildConfigurationList = AD29F71F22BA3183009462DB /* Build configuration list for PBXProject "UILabel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD29F71B22BA3183009462DB;
+			productRefGroup = AD29F72522BA3183009462DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD29F72322BA3183009462DB /* UILabel */,
+				AD29F73B22BA3186009462DB /* UILabelTests */,
+				AD29F74622BA3186009462DB /* UILabelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD29F72222BA3183009462DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD29F73422BA3186009462DB /* LaunchScreen.storyboard in Resources */,
+				AD29F73122BA3186009462DB /* Assets.xcassets in Resources */,
+				AD29F72F22BA3183009462DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F73A22BA3186009462DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F74522BA3186009462DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD29F72022BA3183009462DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD29F72C22BA3183009462DB /* ViewController.m in Sources */,
+				AD29F73722BA3186009462DB /* main.m in Sources */,
+				ADB20CD022C1C5D5003EB727 /* EvenDistributionLabel.m in Sources */,
+				AD29F72922BA3183009462DB /* AppDelegate.m in Sources */,
+				AD29F75B22BA31AF009462DB /* UILabel+HTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F73822BA3186009462DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD29F74122BA3186009462DB /* UILabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29F74322BA3186009462DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD29F74C22BA3186009462DB /* UILabelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD29F73E22BA3186009462DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD29F72322BA3183009462DB /* UILabel */;
+			targetProxy = AD29F73D22BA3186009462DB /* PBXContainerItemProxy */;
+		};
+		AD29F74922BA3186009462DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD29F72322BA3183009462DB /* UILabel */;
+			targetProxy = AD29F74822BA3186009462DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD29F72D22BA3183009462DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD29F72E22BA3183009462DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD29F73222BA3186009462DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD29F73322BA3186009462DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD29F74E22BA3186009462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD29F74F22BA3186009462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD29F75122BA3186009462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD29F75222BA3186009462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD29F75422BA3186009462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILabel.app/UILabel";
+			};
+			name = Debug;
+		};
+		AD29F75522BA3186009462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILabel.app/UILabel";
+			};
+			name = Release;
+		};
+		AD29F75722BA3186009462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UILabel;
+			};
+			name = Debug;
+		};
+		AD29F75822BA3186009462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UILabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.UILabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UILabel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD29F71F22BA3183009462DB /* Build configuration list for PBXProject "UILabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD29F74E22BA3186009462DB /* Debug */,
+				AD29F74F22BA3186009462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD29F75022BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD29F75122BA3186009462DB /* Debug */,
+				AD29F75222BA3186009462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD29F75322BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD29F75422BA3186009462DB /* Debug */,
+				AD29F75522BA3186009462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD29F75622BA3186009462DB /* Build configuration list for PBXNativeTarget "UILabelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD29F75722BA3186009462DB /* Debug */,
+				AD29F75822BA3186009462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD29F71C22BA3183009462DB /* Project object */;
+}

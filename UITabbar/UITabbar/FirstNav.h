@@ -1,0 +1,13 @@
+//
+//  FirstNav.h
+//  UITabbar
+//
+//  Created by CYKJ on 2019/6/10.
+//  Copyright © 2019年 D. All rights reserved.
+
+
+#import <UIKit/UIKit.h>
+
+@interface FirstNav : UINavigationController
+
+@end
