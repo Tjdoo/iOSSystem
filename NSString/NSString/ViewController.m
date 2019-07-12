@@ -28,7 +28,9 @@
     self.sString = mString;
     self.cString = mString;
     
-    // mString -> 0x600002565b30, sString -> 0x600002565b30, cString -> 0xcac34ab7cb397e8b
+    // mString -> 0x600002565b30
+    //  sString  -> 0x600002565b30
+    // cString -> 0xcac34ab7cb397e8b
     NSLog(@"mString -> %p, sString -> %p, cString -> %p", mString, _sString, _cString);
     
     NSLog(@"%@", self.sString);  // 2019-05-22 18:33:53.953437+0800 NSString[26247:855407] AA
@@ -38,6 +40,8 @@
     
     NSLog(@"%@", self.sString);  // 2019-05-22 18:33:53.953580+0800 NSString[26247:855407] AABB
     NSLog(@"%@", self.cString);  // 2019-05-22 18:33:53.953437+0800 NSString[26247:855407] AA
+    
+    // 结论：strong 指针地址相同，指向同一份内存，copy 复制了一份内存
 }
 
 @end

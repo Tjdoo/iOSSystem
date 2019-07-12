@@ -4,12 +4,10 @@
 //  CiYunApp
 //
 //  Created by CYKJ on 2019/6/19.
-//  Copyright © 2019年 北京慈云科技有限公司. All rights reserved.
+//  Copyright © 2019年 D. All rights reserved.
 
 
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
 
 typedef struct CYCornerInsets {
     CGFloat topLeft;
@@ -18,6 +16,7 @@ typedef struct CYCornerInsets {
     CGFloat bottomRight;
 } CYCornerInsets;
 
+// 注意 CG_INLINE
 CG_INLINE CYCornerInsets CYCornerInsetsMake(CGFloat topLeft,
                                   CGFloat topRight,
                                   CGFloat bottomLeft,
@@ -34,5 +33,3 @@ CG_INLINE CYCornerInsets CYCornerInsetsMake(CGFloat topLeft,
 - (void)addCornerRadius:(CYCornerInsets)cornerInsets;
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -3,7 +3,7 @@
 //  CiYunApp
 //
 //  Created by CYKJ on 2019/6/19.
-//  Copyright © 2019年 北京慈云科技有限公司. All rights reserved.
+//  Copyright © 2019年 D. All rights reserved.
 
 
 #import "UIView+CornerRadius.h"
