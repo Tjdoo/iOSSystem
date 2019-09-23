@@ -32,7 +32,7 @@
     
     // obj 参数没有指明，但方法声明包裹在 NS_ASSUME_NONNULL_BEGIN 和 NS_ASSUME_NONNULL_END 中间，所以是 nonnull
     // 警告：Null passed to a callee that requires a non-null argument
-    [dict setObject:nil forKey:@"AA"];  // 运行崩溃
+//    [dict setObject:nil forKey:@"AA"];  // 运行崩溃
 }
 
 @end

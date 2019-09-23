@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1DC4952313ACE800C86866 /* RootNav.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC4942313ACE800C86866 /* RootNav.m */; };
+		AD1DC4A12313AE7600C86866 /* ChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC49B2313AE7600C86866 /* ChildVC.m */; };
+		AD1DC4A22313AE7600C86866 /* NextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC49F2313AE7600C86866 /* NextVC.m */; };
+		AD1DC4A32313AE7600C86866 /* UIViewController+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC4A02313AE7600C86866 /* UIViewController+PopGesture.m */; };
+		AD1DC4A62313B2E100C86866 /* UIScrollView+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC4A52313B2E100C86866 /* UIScrollView+PopGesture.m */; };
 		ADF8501C22C3514800A6FE0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8501B22C3514800A6FE0C /* AppDelegate.m */; };
 		ADF8501F22C3514800A6FE0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8501E22C3514800A6FE0C /* ViewController.m */; };
 		ADF8502222C3514800A6FE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF8502022C3514800A6FE0C /* Main.storyboard */; };
@@ -15,7 +20,6 @@
 		ADF8502A22C3514A00A6FE0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8502922C3514A00A6FE0C /* main.m */; };
 		ADF8503422C3514A00A6FE0C /* UIViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8503322C3514A00A6FE0C /* UIViewControllerTests.m */; };
 		ADF8503F22C3514A00A6FE0C /* UIViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8503E22C3514A00A6FE0C /* UIViewControllerUITests.m */; };
-		ADF8504E22C351C400A6FE0C /* ChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8504D22C351C400A6FE0C /* ChildVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1DC4932313ACE800C86866 /* RootNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNav.h; sourceTree = "<group>"; };
+		AD1DC4942313ACE800C86866 /* RootNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNav.m; sourceTree = "<group>"; };
+		AD1DC49A2313AE7600C86866 /* ChildVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildVC.h; sourceTree = "<group>"; };
+		AD1DC49B2313AE7600C86866 /* ChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildVC.m; sourceTree = "<group>"; };
+		AD1DC49D2313AE7600C86866 /* NextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextVC.h; sourceTree = "<group>"; };
+		AD1DC49E2313AE7600C86866 /* UIViewController+PopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopGesture.h"; sourceTree = "<group>"; };
+		AD1DC49F2313AE7600C86866 /* NextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextVC.m; sourceTree = "<group>"; };
+		AD1DC4A02313AE7600C86866 /* UIViewController+PopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopGesture.m"; sourceTree = "<group>"; };
+		AD1DC4A42313B2E100C86866 /* UIScrollView+PopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PopGesture.h"; sourceTree = "<group>"; };
+		AD1DC4A52313B2E100C86866 /* UIScrollView+PopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PopGesture.m"; sourceTree = "<group>"; };
 		ADF8501722C3514800A6FE0C /* UIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF8501A22C3514800A6FE0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADF8501B22C3514800A6FE0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +66,6 @@
 		ADF8503A22C3514A00A6FE0C /* UIViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF8503E22C3514A00A6FE0C /* UIViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerUITests.m; sourceTree = "<group>"; };
 		ADF8504022C3514A00A6FE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADF8504C22C351C400A6FE0C /* ChildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC.h; sourceTree = "<group>"; };
-		ADF8504D22C351C400A6FE0C /* ChildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1DC4992313AE7600C86866 /* ChildController */ = {
+			isa = PBXGroup;
+			children = (
+				AD1DC49A2313AE7600C86866 /* ChildVC.h */,
+				AD1DC49B2313AE7600C86866 /* ChildVC.m */,
+			);
+			path = ChildController;
+			sourceTree = "<group>";
+		};
+		AD1DC49C2313AE7600C86866 /* PopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				AD1DC49D2313AE7600C86866 /* NextVC.h */,
+				AD1DC49F2313AE7600C86866 /* NextVC.m */,
+				AD1DC49E2313AE7600C86866 /* UIViewController+PopGesture.h */,
+				AD1DC4A02313AE7600C86866 /* UIViewController+PopGesture.m */,
+				AD1DC4A42313B2E100C86866 /* UIScrollView+PopGesture.h */,
+				AD1DC4A52313B2E100C86866 /* UIScrollView+PopGesture.m */,
+			);
+			path = PopGesture;
+			sourceTree = "<group>";
+		};
 		ADF8500E22C3514800A6FE0C = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +138,14 @@
 		ADF8501922C3514800A6FE0C /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AD1DC4992313AE7600C86866 /* ChildController */,
+				AD1DC49C2313AE7600C86866 /* PopGesture */,
 				ADF8501A22C3514800A6FE0C /* AppDelegate.h */,
 				ADF8501B22C3514800A6FE0C /* AppDelegate.m */,
+				AD1DC4932313ACE800C86866 /* RootNav.h */,
+				AD1DC4942313ACE800C86866 /* RootNav.m */,
 				ADF8501D22C3514800A6FE0C /* ViewController.h */,
 				ADF8501E22C3514800A6FE0C /* ViewController.m */,
-				ADF8504C22C351C400A6FE0C /* ChildVC.h */,
-				ADF8504D22C351C400A6FE0C /* ChildVC.m */,
 				ADF8502022C3514800A6FE0C /* Main.storyboard */,
 				ADF8502322C3514A00A6FE0C /* Assets.xcassets */,
 				ADF8502522C3514A00A6FE0C /* LaunchScreen.storyboard */,
@@ -267,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1DC4A32313AE7600C86866 /* UIViewController+PopGesture.m in Sources */,
 				ADF8501F22C3514800A6FE0C /* ViewController.m in Sources */,
-				ADF8504E22C351C400A6FE0C /* ChildVC.m in Sources */,
+				AD1DC4A12313AE7600C86866 /* ChildVC.m in Sources */,
+				AD1DC4952313ACE800C86866 /* RootNav.m in Sources */,
+				AD1DC4A22313AE7600C86866 /* NextVC.m in Sources */,
+				AD1DC4A62313B2E100C86866 /* UIScrollView+PopGesture.m in Sources */,
 				ADF8502A22C3514A00A6FE0C /* main.m in Sources */,
 				ADF8501C22C3514800A6FE0C /* AppDelegate.m in Sources */,
 			);

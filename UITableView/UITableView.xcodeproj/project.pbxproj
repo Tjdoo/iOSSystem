@@ -10,6 +10,7 @@
 		AD87C82522B88B6200E90A8E /* ListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87C82322B88B6200E90A8E /* ListDataSource.m */; };
 		AD87C82C22B88BBF00E90A8E /* ListDataSourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87C82B22B88BBF00E90A8E /* ListDataSourceCell.m */; };
 		AD87C82F22B88CEB00E90A8E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD87C82E22B88CEB00E90A8E /* Person.m */; };
+		ADB86BA8230CE077007D6E49 /* SimultaneouslyTV.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB86BA7230CE077007D6E49 /* SimultaneouslyTV.m */; };
 		ADEEC7B522A78C49002D861F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC7B422A78C49002D861F /* AppDelegate.m */; };
 		ADEEC7B822A78C49002D861F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC7B722A78C49002D861F /* ViewController.m */; };
 		ADEEC7BB22A78C49002D861F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEEC7B922A78C49002D861F /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		AD87C82B22B88BBF00E90A8E /* ListDataSourceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListDataSourceCell.m; sourceTree = "<group>"; };
 		AD87C82D22B88CEB00E90A8E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		AD87C82E22B88CEB00E90A8E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		ADB86BA6230CE077007D6E49 /* SimultaneouslyTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimultaneouslyTV.h; sourceTree = "<group>"; };
+		ADB86BA7230CE077007D6E49 /* SimultaneouslyTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimultaneouslyTV.m; sourceTree = "<group>"; };
 		ADEEC7B022A78C49002D861F /* UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEEC7B322A78C49002D861F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADEEC7B422A78C49002D861F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				ADEEC7BE22A78C4B002D861F /* LaunchScreen.storyboard */,
 				ADEEC7C122A78C4B002D861F /* Info.plist */,
 				ADEEC7C222A78C4B002D861F /* main.m */,
+				ADB86BA6230CE077007D6E49 /* SimultaneouslyTV.h */,
+				ADB86BA7230CE077007D6E49 /* SimultaneouslyTV.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				AD87C82C22B88BBF00E90A8E /* ListDataSourceCell.m in Sources */,
 				AD87C82522B88B6200E90A8E /* ListDataSource.m in Sources */,
 				ADEEC7B522A78C49002D861F /* AppDelegate.m in Sources */,
+				ADB86BA8230CE077007D6E49 /* SimultaneouslyTV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

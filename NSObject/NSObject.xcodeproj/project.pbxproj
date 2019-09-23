@@ -21,6 +21,7 @@
 		AD50C18522D47EA3009E3270 /* Child+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C17F22D47EA2009E3270 /* Child+Category.m */; };
 		AD50C18622D47EA3009E3270 /* InitializeLoad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AD50C18022D47EA2009E3270 /* InitializeLoad.pdf */; };
 		AD50C18722D47EA3009E3270 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C18222D47EA2009E3270 /* Child.m */; };
+		ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC406A422D9D196002F05C0 /* ProtocolCls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		AD50C18122D47EA2009E3270 /* Child+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+Category.h"; sourceTree = "<group>"; };
 		AD50C18222D47EA2009E3270 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
 		AD50C18322D47EA2009E3270 /* Super.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Super.h; sourceTree = "<group>"; };
+		ADC406A322D9D196002F05C0 /* ProtocolCls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolCls.h; sourceTree = "<group>"; };
+		ADC406A422D9D196002F05C0 /* ProtocolCls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolCls.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 		AD50C14222D47D48009E3270 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				ADC406A222D9D14D002F05C0 /* Protocol */,
 				AD50C17C22D47E4C009E3270 /* initializeLoad */,
 				AD50C17522D47D8F009E3270 /* Singleton */,
 				AD50C14322D47D48009E3270 /* AppDelegate.h */,
@@ -174,6 +178,15 @@
 				AD50C17F22D47EA2009E3270 /* Child+Category.m */,
 			);
 			path = initializeLoad;
+			sourceTree = "<group>";
+		};
+		ADC406A222D9D14D002F05C0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				ADC406A322D9D196002F05C0 /* ProtocolCls.h */,
+				ADC406A422D9D196002F05C0 /* ProtocolCls.m */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +326,7 @@
 				AD50C14822D47D48009E3270 /* ViewController.m in Sources */,
 				AD50C18422D47EA3009E3270 /* Super.m in Sources */,
 				AD50C15322D47D4A009E3270 /* main.m in Sources */,
+				ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */,
 				AD50C18722D47EA3009E3270 /* Child.m in Sources */,
 				AD50C14522D47D48009E3270 /* AppDelegate.m in Sources */,
 			);
