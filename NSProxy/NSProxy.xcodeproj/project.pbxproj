@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2C699C23420370003BC233 /* AOMultiproxier.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C699A23420370003BC233 /* AOMultiproxier.m */; };
+		AD2C699E23420818003BC233 /* 协议分发.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2C699D23420818003BC233 /* 协议分发.md */; };
 		AD50C1D922D877C7009E3270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C1D822D877C7009E3270 /* AppDelegate.m */; };
 		AD50C1DC22D877C7009E3270 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C1DB22D877C7009E3270 /* ViewController.m */; };
 		AD50C1DF22D877C7009E3270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD50C1DD22D877C7009E3270 /* Main.storyboard */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD2C699A23420370003BC233 /* AOMultiproxier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMultiproxier.m; sourceTree = "<group>"; };
+		AD2C699B23420370003BC233 /* AOMultiproxier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOMultiproxier.h; sourceTree = "<group>"; };
+		AD2C699D23420818003BC233 /* 协议分发.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "协议分发.md"; sourceTree = "<group>"; };
 		AD50C1D422D877C7009E3270 /* NSProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD50C1D722D877C7009E3270 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD50C1D822D877C7009E3270 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD2C699923420370003BC233 /* Multiproxier */ = {
+			isa = PBXGroup;
+			children = (
+				AD2C699D23420818003BC233 /* 协议分发.md */,
+				AD2C699B23420370003BC233 /* AOMultiproxier.h */,
+				AD2C699A23420370003BC233 /* AOMultiproxier.m */,
+			);
+			path = Multiproxier;
+			sourceTree = "<group>";
+		};
 		AD50C1CB22D877C7009E3270 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				AD50C22222D89FFF009E3270 /* NSProxy.md */,
+				AD2C699923420370003BC233 /* Multiproxier */,
 				AD50C22122D89E47009E3270 /* LazyInit */,
 				AD50C21722D88DE7009E3270 /* AOP */,
 				AD50C21322D882F6009E3270 /* CircularReference */,
@@ -307,6 +323,7 @@
 			files = (
 				AD50C22322D8A000009E3270 /* NSProxy.md in Resources */,
 				AD50C1E422D877C8009E3270 /* LaunchScreen.storyboard in Resources */,
+				AD2C699E23420818003BC233 /* 协议分发.md in Resources */,
 				AD50C1E122D877C8009E3270 /* Assets.xcassets in Resources */,
 				AD50C1DF22D877C7009E3270 /* Main.storyboard in Resources */,
 			);
@@ -340,6 +357,7 @@
 				AD50C1D922D877C7009E3270 /* AppDelegate.m in Sources */,
 				AD50C21A22D88E13009E3270 /* MyProxy.m in Sources */,
 				AD50C20F22D87CC9009E3270 /* ClassB.m in Sources */,
+				AD2C699C23420370003BC233 /* AOMultiproxier.m in Sources */,
 				AD50C21222D87CF6009E3270 /* ClassProxy.m in Sources */,
 				AD50C21622D88310009E3270 /* WeakProxy.m in Sources */,
 				AD50C22022D89550009E3270 /* AOPProxy.m in Sources */,

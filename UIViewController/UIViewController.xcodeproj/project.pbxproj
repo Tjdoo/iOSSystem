@@ -12,6 +12,7 @@
 		AD1DC4A22313AE7600C86866 /* NextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC49F2313AE7600C86866 /* NextVC.m */; };
 		AD1DC4A32313AE7600C86866 /* UIViewController+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC4A02313AE7600C86866 /* UIViewController+PopGesture.m */; };
 		AD1DC4A62313B2E100C86866 /* UIScrollView+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1DC4A52313B2E100C86866 /* UIScrollView+PopGesture.m */; };
+		AD2C698B2341D636003BC233 /* addChildViewController.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2C698A2341D636003BC233 /* addChildViewController.md */; };
 		ADF8501C22C3514800A6FE0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8501B22C3514800A6FE0C /* AppDelegate.m */; };
 		ADF8501F22C3514800A6FE0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF8501E22C3514800A6FE0C /* ViewController.m */; };
 		ADF8502222C3514800A6FE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF8502022C3514800A6FE0C /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		AD1DC4A02313AE7600C86866 /* UIViewController+PopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopGesture.m"; sourceTree = "<group>"; };
 		AD1DC4A42313B2E100C86866 /* UIScrollView+PopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PopGesture.h"; sourceTree = "<group>"; };
 		AD1DC4A52313B2E100C86866 /* UIScrollView+PopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PopGesture.m"; sourceTree = "<group>"; };
+		AD2C698A2341D636003BC233 /* addChildViewController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = addChildViewController.md; sourceTree = "<group>"; };
 		ADF8501722C3514800A6FE0C /* UIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF8501A22C3514800A6FE0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADF8501B22C3514800A6FE0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		AD1DC4992313AE7600C86866 /* ChildController */ = {
 			isa = PBXGroup;
 			children = (
+				AD2C698A2341D636003BC233 /* addChildViewController.md */,
 				AD1DC49A2313AE7600C86866 /* ChildVC.h */,
 				AD1DC49B2313AE7600C86866 /* ChildVC.m */,
 			);
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2C698B2341D636003BC233 /* addChildViewController.md in Resources */,
 				ADF8502722C3514A00A6FE0C /* LaunchScreen.storyboard in Resources */,
 				ADF8502422C3514A00A6FE0C /* Assets.xcassets in Resources */,
 				ADF8502222C3514800A6FE0C /* Main.storyboard in Resources */,
