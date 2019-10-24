@@ -22,6 +22,16 @@
 {
     [super viewDidLoad];
     
+    [self __copyStrongString];
+    
+    NSLog(@"银行卡号：%@s", [self getNewBankNum:@"6227273827638465" whiteSpaceCount:1]);
+}
+
+/**
+  *  @brief    copy、strong 修饰的区别
+  */
+- (void)__copyStrongString
+{
     NSMutableString * mString = [NSMutableString string];
     [mString appendFormat:@"AA"];
     
@@ -35,13 +45,46 @@
     
     NSLog(@"%@", self.sString);  // 2019-05-22 18:33:53.953437+0800 NSString[26247:855407] AA
     NSLog(@"%@", self.cString);  // 2019-05-22 18:33:53.953437+0800 NSString[26247:855407] AA
-
+    
     [mString appendFormat:@"BB"];
     
     NSLog(@"%@", self.sString);  // 2019-05-22 18:33:53.953580+0800 NSString[26247:855407] AABB
     NSLog(@"%@", self.cString);  // 2019-05-22 18:33:53.953437+0800 NSString[26247:855407] AA
     
     // 结论：strong 指针地址相同，指向同一份内存，copy 复制了一份内存
+}
+
+/**
+  *  @brief   银行卡号增加间隔
+  */
+- (NSString *)getNewBankNum:(NSString *)bankNum whiteSpaceCount:(NSInteger)count
+{
+    NSCharacterSet * cs = [NSCharacterSet characterSetWithCharactersInString:@"0123456789\b"];
+    
+    NSMutableString * whiteSpace = [NSMutableString string];
+    for (NSInteger i = 0; i < count; i++) {
+        [whiteSpace appendString:@" "];
+    }
+    
+    // 去掉“空格”
+    bankNum = [bankNum stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString * newString = @"";
+    
+    while (bankNum.length > 0) {
+        
+        NSString * subString = [bankNum substringToIndex:MIN(bankNum.length, 4)];
+        
+        newString = [newString stringByAppendingString:subString];
+        
+        if (subString.length == 4) {
+            newString = [newString stringByAppendingString:whiteSpace];
+        }
+        bankNum = [bankNum substringFromIndex:MIN(bankNum.length, 4)];
+    }
+    
+    // 去掉末尾的空格
+    return [newString stringByTrimmingCharactersInSet:[cs invertedSet]];
 }
 
 @end

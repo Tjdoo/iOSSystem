@@ -21,10 +21,37 @@
 6. 刷新单个 cell 时 UITableViewRowAnimationNone 还有动画
 
 	```
+	// 禁止动画
 	[UIView setAnimationsEnabled:NO];
 	[self.tableView beginUpdates];
 	[self.tableView reloadRowsAtIndexPaths:@[ indexPath ]
 	                      withRowAnimation:UITableViewRowAnimationNone];
 	[self.tableView endUpdates];
 	[UIView setAnimationsEnabled:YES];
+	
+	// 或者
+	[UIView performWithoutAnimation:^{
+
+	}];
+	```
+	
+7. reloadRowsAtIndexPaths: 的问题
+
+	变高的 cell 点击后，表格的内容高度会发生变化。使用 reloadRowsAtIndexPaths 会导致调用不同 cell 的 heightForRowAtIndexPath 来计算表格内容区的大小，这种情况下出现当前 cell 显示异常：虽然占了正确的高度，但是实际“内容区”很小。
+	
+	![](http://dzliving.com/reloadRowsAtIndexPaths.png)
+	
+	所以改为 reloadData。
+
+	```
+	- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+	{
+		...
+		
+		[self.tableView reloadData];
+//        [self.tableView beginUpdates];
+//        [self.tableView reloadRowsAtIndexPaths:@[ indexPath ]
+//                              withRowAnimation:UITableViewRowAnimationNone];
+//        [self.tableView endUpdates];
+	}
 	```
