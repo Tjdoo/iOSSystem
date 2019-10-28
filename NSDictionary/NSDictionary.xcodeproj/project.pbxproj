@@ -17,6 +17,7 @@
 		AD43DF89228C228E0060FA2E /* NSDictionaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD43DF88228C228E0060FA2E /* NSDictionaryUITests.m */; };
 		AD43DF98228C22B10060FA2E /* NilValue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD43DF97228C22B10060FA2E /* NilValue.m */; };
 		AD43DF9B228C22E30060FA2E /* NilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD43DF9A228C22E30060FA2E /* NilObject.m */; };
+		ADE9B2E52363494A00B16F2D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE9B2E42363494A00B16F2D /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		AD43DF97228C22B10060FA2E /* NilValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilValue.m; sourceTree = "<group>"; };
 		AD43DF99228C22E30060FA2E /* NilObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NilObject.h; sourceTree = "<group>"; };
 		AD43DF9A228C22E30060FA2E /* NilObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilObject.m; sourceTree = "<group>"; };
+		ADE9B2E32363494A00B16F2D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		ADE9B2E42363494A00B16F2D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				AD43DF65228C228C0060FA2E /* AppDelegate.m */,
 				AD43DF67228C228C0060FA2E /* ViewController.h */,
 				AD43DF68228C228C0060FA2E /* ViewController.m */,
+				ADE9B2E32363494A00B16F2D /* Person.h */,
+				ADE9B2E42363494A00B16F2D /* Person.m */,
 				AD43DF6A228C228C0060FA2E /* Main.storyboard */,
 				AD43DF6D228C228E0060FA2E /* Assets.xcassets */,
 				AD43DF6F228C228E0060FA2E /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE9B2E52363494A00B16F2D /* Person.m in Sources */,
 				AD43DF69228C228C0060FA2E /* ViewController.m in Sources */,
 				AD43DF98228C22B10060FA2E /* NilValue.m in Sources */,
 				AD43DF9B228C22E30060FA2E /* NilObject.m in Sources */,

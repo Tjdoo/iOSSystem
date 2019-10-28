@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0015102366DC87003EFF50 /* CornerRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00150F2366DC87003EFF50 /* CornerRadiusView.m */; };
+		AD0015172366E283003EFF50 /* 图-0.png in Resources */ = {isa = PBXBuildFile; fileRef = AD0015152366E283003EFF50 /* 图-0.png */; };
+		AD0015182366E283003EFF50 /* 图-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD0015162366E283003EFF50 /* 图-1.png */; };
 		AD29F76D22BA4914009462DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F76C22BA4914009462DB /* AppDelegate.m */; };
 		AD29F77022BA4914009462DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F76F22BA4914009462DB /* ViewController.m */; };
 		AD29F77322BA4914009462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD29F77122BA4914009462DB /* Main.storyboard */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD00150E2366DC87003EFF50 /* CornerRadiusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerRadiusView.h; sourceTree = "<group>"; };
+		AD00150F2366DC87003EFF50 /* CornerRadiusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusView.m; sourceTree = "<group>"; };
+		AD0015152366E283003EFF50 /* 图-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图-0.png"; sourceTree = "<group>"; };
+		AD0015162366E283003EFF50 /* 图-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图-1.png"; sourceTree = "<group>"; };
 		AD29F76822BA4914009462DB /* UIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD29F76B22BA4914009462DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD29F76C22BA4914009462DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +111,10 @@
 		AD29F76A22BA4914009462DB /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				AD0015152366E283003EFF50 /* 图-0.png */,
+				AD0015162366E283003EFF50 /* 图-1.png */,
+				AD00150E2366DC87003EFF50 /* CornerRadiusView.h */,
+				AD00150F2366DC87003EFF50 /* CornerRadiusView.m */,
 				AD29F79E22BA493A009462DB /* UIView+CornerRadius.h */,
 				AD29F79D22BA493A009462DB /* UIView+CornerRadius.m */,
 				AD29F76B22BA4914009462DB /* AppDelegate.h */,
@@ -241,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD29F77822BA4915009462DB /* LaunchScreen.storyboard in Resources */,
+				AD0015182366E283003EFF50 /* 图-1.png in Resources */,
+				AD0015172366E283003EFF50 /* 图-0.png in Resources */,
 				AD29F77522BA4915009462DB /* Assets.xcassets in Resources */,
 				AD29F77322BA4914009462DB /* Main.storyboard in Resources */,
 			);
@@ -268,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD29F77022BA4914009462DB /* ViewController.m in Sources */,
+				AD0015102366DC87003EFF50 /* CornerRadiusView.m in Sources */,
 				AD29F79F22BA493A009462DB /* UIView+CornerRadius.m in Sources */,
 				AD29F77B22BA4915009462DB /* main.m in Sources */,
 				AD29F76D22BA4914009462DB /* AppDelegate.m in Sources */,

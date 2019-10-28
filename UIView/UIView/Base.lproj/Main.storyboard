@@ -53,6 +53,13 @@
                                     <constraint firstAttribute="width" secondItem="tdo-Bc-Rd9" secondAttribute="height" multiplier="1:1" id="NNc-Ny-3eV"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-ej-I0y" customClass="CornerRadiusView">
+                                <rect key="frame" x="0.0" y="417" width="375" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="SNZ-vC-8gT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,8 +69,11 @@
                             <constraint firstItem="VBM-O0-N7e" firstAttribute="leading" secondItem="Rf3-Mo-9sk" secondAttribute="trailing" constant="100" id="Bdv-Qe-MEj"/>
                             <constraint firstItem="tdo-Bc-Rd9" firstAttribute="width" secondItem="VBM-O0-N7e" secondAttribute="width" id="Cx4-c3-bI6"/>
                             <constraint firstItem="VBM-O0-N7e" firstAttribute="top" secondItem="PTx-Mj-SQW" secondAttribute="bottom" constant="30" id="IPe-r0-Wbd"/>
+                            <constraint firstAttribute="trailing" secondItem="XRh-ej-I0y" secondAttribute="trailing" id="Lpl-w2-wi7"/>
                             <constraint firstItem="tbG-Aj-Efw" firstAttribute="trailing" secondItem="VBM-O0-N7e" secondAttribute="trailing" id="OWh-1m-lAe"/>
+                            <constraint firstItem="XRh-ej-I0y" firstAttribute="leading" secondItem="lwg-6e-aBi" secondAttribute="leading" id="Wtq-pj-NX4"/>
                             <constraint firstItem="tdo-Bc-Rd9" firstAttribute="top" secondItem="VBM-O0-N7e" secondAttribute="bottom" constant="30" id="d11-Q0-EJN"/>
+                            <constraint firstItem="FnB-1a-EDW" firstAttribute="top" secondItem="XRh-ej-I0y" secondAttribute="bottom" id="dXl-6Y-jN0"/>
                             <constraint firstItem="VBM-O0-N7e" firstAttribute="width" secondItem="Rf3-Mo-9sk" secondAttribute="width" id="eUm-B5-TTf"/>
                             <constraint firstAttribute="trailing" secondItem="VBM-O0-N7e" secondAttribute="trailing" constant="30" id="f5d-Bg-eFK"/>
                             <constraint firstItem="tbG-Aj-Efw" firstAttribute="bottom" secondItem="VBM-O0-N7e" secondAttribute="bottom" id="hm7-9l-MDX"/>

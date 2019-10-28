@@ -12,11 +12,20 @@
 
 - (void)addCornerRadius:(CYCornerInsets)cornerInsets
 {
-    CAShapeLayer * shapeLayer = [CAShapeLayer layer];
-    CGPathRef path = CYPathCreateWithRoundedRect(self.bounds, cornerInsets);
-    shapeLayer.path = path;
-    CGPathRelease(path);
-    self.layer.mask = shapeLayer;
+    // 方式 ①
+//    CGPathRef path = CYPathCreateWithRoundedRect(self.bounds, cornerInsets);
+//
+//    CAShapeLayer * shape1 = [CAShapeLayer layer];
+//    shape1.path = path;
+//    self.layer.mask = shape1;
+//    CGPathRelease(path);
+    
+    // 方式 ②。实际和 ① 是一样的，都是 CAShapeLayer + CGPath
+    UIBezierPath * bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomLeft cornerRadii:CGSizeMake(20, 20)];
+    CAShapeLayer * shape2 = [CAShapeLayer layer];
+    shape2.frame = self.bounds;
+    shape2.path = bezierPath.CGPath;
+    self.layer.mask = shape2;
 }
 
 /**
