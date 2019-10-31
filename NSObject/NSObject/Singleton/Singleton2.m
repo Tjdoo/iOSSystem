@@ -10,7 +10,7 @@
 
 @implementation Singleton2
 
-static Singleton2 * singleton;
+static Singleton2 * singleton2;
 static dispatch_once_t onceToken1;  // typedef long dispatch_once_t，默认为 0
 static dispatch_once_t onceToken2;
 
@@ -34,17 +34,27 @@ static dispatch_once_t onceToken2;
 + (instancetype)sharedSingleton
 {
     dispatch_once(&onceToken1, ^{
-        singleton = [[self alloc] init];
+        singleton2 = [[self alloc] init];
     });
-    return singleton;
+    return singleton2;
 }
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
     dispatch_once(&onceToken2, ^{
-        singleton = [super allocWithZone:zone];
+        singleton2 = [super allocWithZone:zone];
     });
-    return singleton;
+    return singleton2;
+}
+
+- (instancetype)copyWithZone:(NSZone *)zone
+{
+    return [Singleton2 sharedSingleton];
+}
+
+- (instancetype)mutableCopyWithZone:(NSZone *)zone
+{
+    return [Singleton2 sharedSingleton];
 }
 
 /**
@@ -55,7 +65,13 @@ static dispatch_once_t onceToken2;
     onceToken1 = 0; // 只有置成 0，GCD 才会认为它从未执行过，这样才能保证下次再次调用 shareInstance 的时候能够再次创建对象
     onceToken2 = 0;
 //    [singleton release];  // MRC
-    singleton = nil;
+    singleton2 = nil;
+}
+
+- (void)dealloc
+{
+    // 当 Singleton2 对象赋值为 nil 时，dealloc 方法会被调用
+    NSLog(@"%s", __func__);
 }
 
 @end

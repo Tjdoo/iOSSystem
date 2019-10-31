@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0015B12369827A003EFF50 /* BulgeTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0015B02369827A003EFF50 /* BulgeTabbar.m */; };
 		AD3B471322AE04B6001C0FD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3B471222AE04B6001C0FD7 /* AppDelegate.m */; };
 		AD3B471922AE04B6001C0FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3B471722AE04B6001C0FD7 /* Main.storyboard */; };
 		AD3B471B22AE04B9001C0FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3B471A22AE04B9001C0FD7 /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0015AF2369827A003EFF50 /* BulgeTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BulgeTabbar.h; sourceTree = "<group>"; };
+		AD0015B02369827A003EFF50 /* BulgeTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BulgeTabbar.m; sourceTree = "<group>"; };
 		AD3B470E22AE04B6001C0FD7 /* UITabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3B471122AE04B6001C0FD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD3B471222AE04B6001C0FD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				AD3B474D22AE0854001C0FD7 /* SecondNav.m */,
 				AD61DA7122B376190075CA87 /* ThirdNav.h */,
 				AD61DA7222B376190075CA87 /* ThirdNav.m */,
+				AD0015AF2369827A003EFF50 /* BulgeTabbar.h */,
+				AD0015B02369827A003EFF50 /* BulgeTabbar.m */,
 				AD3B471122AE04B6001C0FD7 /* AppDelegate.h */,
 				AD3B471222AE04B6001C0FD7 /* AppDelegate.m */,
 				AD3B471722AE04B6001C0FD7 /* Main.storyboard */,
@@ -285,6 +290,7 @@
 				AD61DA7322B376190075CA87 /* ThirdNav.m in Sources */,
 				AD3B474B22AE0844001C0FD7 /* FirstNav.m in Sources */,
 				AD3B472122AE04B9001C0FD7 /* main.m in Sources */,
+				AD0015B12369827A003EFF50 /* BulgeTabbar.m in Sources */,
 				AD3B474522AE0531001C0FD7 /* TabbarVC.m in Sources */,
 				AD3B474E22AE0854001C0FD7 /* SecondNav.m in Sources */,
 				AD3B471322AE04B6001C0FD7 /* AppDelegate.m in Sources */,

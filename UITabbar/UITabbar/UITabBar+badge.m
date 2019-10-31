@@ -8,7 +8,7 @@
 
 #import "UITabBar+badge.h"
 
-#define TabbarItemNums    3.0   // tabbar的数量如果是 4 个设置为 4.0
+#define TabbarItemNums    4.0   // tabbar的数量如果是 4 个设置为 4.0
 #define TABBAR_ITEM_TAG   8888
 #define RED_CIRCLE_WIDTH  8     // 红点的宽
 

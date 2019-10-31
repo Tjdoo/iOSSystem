@@ -23,4 +23,9 @@
     return self;
 }
 
+- (void)sayHello
+{
+    NSLog(@"Son Class Override SayHello Func!");
+}
+
 @end

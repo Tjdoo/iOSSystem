@@ -10,6 +10,7 @@
 #import "NilValue.h"
 #import "NilObject.h"
 #import "Person.h"
+#import "KeyObject.h"
 
 
 @interface ViewController ()
@@ -25,20 +26,29 @@
 
     [NilValue exe];
     [NilObject exe];
-
     
-//*****************************
+    [self __testAddEntriesFromDictionary];
+    [self __testCustomKey];
+    [self __testHash];
+}
 
+- (void)__testAddEntriesFromDictionary
+{
+    NSLog(@"*****************************");
     
     NSDictionary * dict1 = @{ @"name" : @"Jack", @"age" : @"18" };
     NSMutableDictionary * dict2 = [@{ @"name" : @"Tom" } mutableCopy];
     // addEntriesFromDictionary：复制的时候，value 先执行 retain 方法。相反，每个被复制的 value 都是通过 copyWithZone: 复制产生的副本添加到目标字典。如果两个字典都包含同一个键，则接收字典中该键的上一个值对象将发送一条释放消息，新的值对象将取代它。
     [dict2 addEntriesFromDictionary:dict1];  // 类似：addObjectsFromArray
     NSLog(@"%@", dict2);
-    
-    
-//*****************************
-    
+}
+
+/**
+  *  @brief   测试自定义对象 key
+  */
+- (void)__testCustomKey
+{
+    NSLog(@"*****************************");
 
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
     /* 当 Person 没有遵守 NSCoping 协议时，报错 ：
@@ -60,10 +70,43 @@
     [dict setObject:@"A" forKey:p1];
     NSLog(@"%@", dict);
     NSLog(@"%@", [dict objectForKey:p1]);  // null
-    
+
     Person * p2 = [[Person alloc] init];
     [dict setObject:@"B" forKey:p2];
     NSLog(@"%@", dict);
+}
+
+/**
+  *  @brief   修改 hash 方法，实现 NSCoping 协议方法
+  */
+- (void)__testHash
+{
+    NSLog(@"*****************************");
+    
+    NSMutableDictionary * mDict = [NSMutableDictionary dictionaryWithCapacity:3];
+    
+    KeyObject * key1 = [[KeyObject alloc] initWithHashNum:1];
+    [mDict setObject:@"value1" forKey:key1];
+    NSLog(@"字典 key1 - value1 添加完毕!");
+    
+    KeyObject * key2 = [[KeyObject alloc] initWithHashNum:4];
+    [mDict setObject:@"value2" forKey:key2];
+    NSLog(@"字典 key2 - value2 添加完毕!");
+
+    KeyObject * key3 = [[KeyObject alloc] initWithHashNum:8];
+    [mDict setObject:@"value3" forKey:key3];
+    NSLog(@"字典 key3 - value3 添加完毕!");
+    
+    NSLog(@"key1 = %@", key1);
+    NSLog(@"key2 = %@", key2);
+    NSLog(@"key3 = %@", key3);
+
+    NSLog(@"value1 = %@", [mDict objectForKey:key1]); // value1 被同 value2 覆盖
+    NSLog(@"value2 = %@", [mDict objectForKey:key2]);
+    NSLog(@"value3 = %@", [mDict objectForKey:key3]);
+    
+    NSLog(@"allKeys ---> %@", [mDict allKeys]);  // 值与 key1、key2、key3 不同，因为使用 key 时调用了 NSCoping 协议方法
+    NSLog(@"allValues ---> %@", [mDict allValues]);
 }
 
 @end

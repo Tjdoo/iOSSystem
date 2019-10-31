@@ -1,0 +1,16 @@
+PODS:
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+
+DEPENDENCIES:
+  - "UITableView+FDTemplateLayoutCell"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - "UITableView+FDTemplateLayoutCell"
+
+SPEC CHECKSUMS:
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+
+PODFILE CHECKSUM: 222d3a9d6b7cc5c75fa9ca989e0a57c7f34fa4d3
+
+COCOAPODS: 1.7.4

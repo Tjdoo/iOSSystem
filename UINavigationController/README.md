@@ -1,3 +1,5 @@
+## 导航控制器
+
 1. > 右滑返回手势失效？
 
 	主要是因为自定义了页面中 navigationItem 的 leftBarButtonItem 或leftBarButtonItems，或是 self.navigationItem.hidesBackButton = YES; 隐藏了返回按钮，亦或是 self.navigationItem.leftItemsSupplementBackButton = NO;
@@ -30,3 +32,7 @@
 
 	self.extendedLayoutIncludesOpaqueBars = YES; 或者 xib、storyboard 中勾选 Under Opaque Bars。
 
+3. > translucent
+
+	[iOS translucent引发的那点小事](https://www.jianshu.com/p/a75632bab095)
+	[鬼魅的“64边距”——translucent属性](https://www.jianshu.com/p/930643270455)

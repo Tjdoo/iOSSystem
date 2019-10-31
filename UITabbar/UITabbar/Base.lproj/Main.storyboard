@@ -13,7 +13,7 @@
         <scene sceneID="6RO-LY-7dQ">
             <objects>
                 <tabBarController id="5QY-ey-o5y" customClass="TabbarVC" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FfI-df-rh6">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FfI-df-rh6" customClass="BulgeTabbar">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +32,7 @@
         <scene sceneID="lgw-jk-6gR">
             <objects>
                 <navigationController id="iXV-9A-aIz" customClass="FirstNav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="消息" image="消息_icon" id="732-z1-O7U"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="消息" image="消息_icon" id="732-z1-O7U"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FiK-Z2-NYk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +46,7 @@
         <scene sceneID="yWt-a5-891">
             <objects>
                 <navigationController id="B8i-Kr-PfH" customClass="SecondNav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="会员" image="会员_icon" id="8yB-9d-v3b"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="会员" image="会员_icon" id="8yB-9d-v3b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rev-K3-5QX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -67,7 +67,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ty-A9-4sP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="250"/>
+            <point key="canvasLocation" x="-2375" y="250"/>
         </scene>
     </scenes>
     <resources>

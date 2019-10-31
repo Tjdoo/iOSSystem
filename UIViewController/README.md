@@ -6,3 +6,25 @@
 2. > setNeedsStatusBarAppearanceUpdate 耗时问题
 
 	使用 Time Profiler 工具定位界面卡顿时发现。
+	
+3. > UIStatusBar 
+
+	[iOS-UIStatusBar详细总结](https://www.jianshu.com/p/be6bde3a821d)
+	
+4. > safeArea
+
+	[iOS 11 safeArea详解 & iphoneX 适配](https://www.jianshu.com/p/1432a94ef66f)
+	[iOS11 与 iPhone X适配的那些坑](https://www.jianshu.com/p/aff9509cfe29?from=groupmessage)
+	[有关iOS11和iPhoneX的适配问题](https://www.jianshu.com/p/a4e778c2236e)
+	
+	<center>
+	![](http://dzliving.com/SafeArea_0.png?imageView2/0/w/400)
+	![](http://dzliving.com/SafeArea_1.png?imageView2/0/w/400)
+	![](http://dzliving.com/Device_0.jpg)
+	</center>
+	
+	```
+	- (BOOL)prefersHomeIndicatorAutoHidden {
+		return YES;
+	}
+	```

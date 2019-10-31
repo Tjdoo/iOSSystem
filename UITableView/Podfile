@@ -1,0 +1,7 @@
+platform:ios, '8.0'
+
+target 'UITableView' do
+
+pod 'UITableView+FDTemplateLayoutCell'
+
+end

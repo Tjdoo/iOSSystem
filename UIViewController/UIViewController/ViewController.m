@@ -206,4 +206,37 @@
     return [[UIApplication sharedApplication] statusBarFrame].size.height + 44;
 }
 
+static BOOL __safeAreaInsetsDidChange = NO;
+- (void)viewSafeAreaInsetsDidChange
+{
+    __safeAreaInsetsDidChange = YES;
+    
+    [super viewSafeAreaInsetsDidChange];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    if (__safeAreaInsetsDidChange) {
+        
+        if (@available(iOS 11.0, *)) {
+            UIEdgeInsets safeAreaInsets = self.view.safeAreaInsets;
+            CGFloat height = 44.0; // 导航栏原本的高度，通常是44.0
+            height += safeAreaInsets.top > 0 ? safeAreaInsets.top : 20.0; // 20.0 是 statusbar的高度
+        }
+        else {
+            
+        }
+    }
+}
+
+/**
+  *  @brief  隐藏 X 以后设备的 HomeIndicator。此方法是在控制器 push 之后就会回调，屏幕若无交互事件响应时，延迟 2 秒左右会自动隐藏。
+  */
+- (BOOL)prefersHomeIndicatorAutoHidden
+{
+    return YES;
+}
+
 @end

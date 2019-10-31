@@ -10,7 +10,7 @@
 
 @implementation Singleton1
 
-static Singleton1 * singleton;
+static Singleton1 * singleton1;
 
 /**
   *  @brief   单例的创建
@@ -18,11 +18,11 @@ static Singleton1 * singleton;
 + (instancetype)sharedSingleton
 {
     @synchronized (self) {
-        if (singleton == nil) {
-            singleton = [[self alloc] init];
+        if (singleton1 == nil) {
+            singleton1 = [[self alloc] init];
         }
     }
-    return singleton;
+    return singleton1;
 }
 
 /**
@@ -31,7 +31,7 @@ static Singleton1 * singleton;
 + (void)deallocSingleton
 {
 //    [singleton release]; // MRC
-    singleton = nil;
+    singleton1 = nil;
 }
 
 @end

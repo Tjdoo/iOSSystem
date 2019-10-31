@@ -7,6 +7,8 @@
 
 
 #import "ViewController.h"
+#import "NSMutableData+Extension.h"
+
 
 @interface ViewController ()
 
@@ -25,6 +27,8 @@
     [self __copyStrongString];
     
     NSLog(@"银行卡号：%@s", [self getNewBankNum:@"6227273827638465" whiteSpaceCount:1]);
+    
+    [self __nsDataAppendString];
 }
 
 /**
@@ -85,6 +89,18 @@
     
     // 去掉末尾的空格
     return [newString stringByTrimmingCharactersInSet:[cs invertedSet]];
+}
+
+- (void)__nsDataAppendString
+{
+    NSString * string = @"hello, this is a test\n";
+    NSData * data1 = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData * data2 = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData * data3 = [string dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSLog(@"data1 address: %zd", [data1 bytes]);
+    NSLog(@"data2 address: %zd", [data2 bytes]);
+    NSLog(@"data3 address: %zd", [data3 bytes]);
 }
 
 @end

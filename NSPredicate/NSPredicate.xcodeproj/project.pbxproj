@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD00157723693930003EFF50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00157623693930003EFF50 /* AppDelegate.m */; };
+		AD00157A23693931003EFF50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00157923693931003EFF50 /* ViewController.m */; };
+		AD00157D23693931003EFF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD00157B23693931003EFF50 /* Main.storyboard */; };
+		AD00157F23693932003EFF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD00157E23693932003EFF50 /* Assets.xcassets */; };
+		AD00158223693932003EFF50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD00158023693932003EFF50 /* LaunchScreen.storyboard */; };
+		AD00158523693932003EFF50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00158423693932003EFF50 /* main.m */; };
+		AD00158F23693932003EFF50 /* NSPredicateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00158E23693932003EFF50 /* NSPredicateTests.m */; };
+		AD00159A23693932003EFF50 /* NSPredicateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00159923693932003EFF50 /* NSPredicateUITests.m */; };
+		AD0015AC23693990003EFF50 /* doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0015A72369398F003EFF50 /* doctor.json */; };
+		AD0015AD23693990003EFF50 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0015A923693990003EFF50 /* Doctor.m */; };
+		AD0015AE23693990003EFF50 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0015AB23693990003EFF50 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD00158B23693932003EFF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD00156A23693930003EFF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD00157123693930003EFF50;
+			remoteInfo = NSPredicate;
+		};
+		AD00159623693932003EFF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD00156A23693930003EFF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD00157123693930003EFF50;
+			remoteInfo = NSPredicate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD00157223693930003EFF50 /* NSPredicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSPredicate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00157523693930003EFF50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD00157623693930003EFF50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD00157823693931003EFF50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD00157923693931003EFF50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD00157C23693931003EFF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD00157E23693932003EFF50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD00158123693932003EFF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD00158323693932003EFF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD00158423693932003EFF50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD00158A23693932003EFF50 /* NSPredicateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSPredicateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00158E23693932003EFF50 /* NSPredicateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPredicateTests.m; sourceTree = "<group>"; };
+		AD00159023693932003EFF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD00159523693932003EFF50 /* NSPredicateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSPredicateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00159923693932003EFF50 /* NSPredicateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPredicateUITests.m; sourceTree = "<group>"; };
+		AD00159B23693932003EFF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0015A72369398F003EFF50 /* doctor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = doctor.json; sourceTree = "<group>"; };
+		AD0015A82369398F003EFF50 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		AD0015A923693990003EFF50 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		AD0015AA23693990003EFF50 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AD0015AB23693990003EFF50 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD00156F23693930003EFF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00158723693932003EFF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00159223693932003EFF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD00156923693930003EFF50 = {
+			isa = PBXGroup;
+			children = (
+				AD00157423693930003EFF50 /* NSPredicate */,
+				AD00158D23693932003EFF50 /* NSPredicateTests */,
+				AD00159823693932003EFF50 /* NSPredicateUITests */,
+				AD00157323693930003EFF50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD00157323693930003EFF50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD00157223693930003EFF50 /* NSPredicate.app */,
+				AD00158A23693932003EFF50 /* NSPredicateTests.xctest */,
+				AD00159523693932003EFF50 /* NSPredicateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD00157423693930003EFF50 /* NSPredicate */ = {
+			isa = PBXGroup;
+			children = (
+				AD00157523693930003EFF50 /* AppDelegate.h */,
+				AD00157623693930003EFF50 /* AppDelegate.m */,
+				AD00157823693931003EFF50 /* ViewController.h */,
+				AD00157923693931003EFF50 /* ViewController.m */,
+				AD0015A82369398F003EFF50 /* Doctor.h */,
+				AD0015A923693990003EFF50 /* Doctor.m */,
+				AD0015A72369398F003EFF50 /* doctor.json */,
+				AD0015AA23693990003EFF50 /* Person.h */,
+				AD0015AB23693990003EFF50 /* Person.m */,
+				AD00157B23693931003EFF50 /* Main.storyboard */,
+				AD00157E23693932003EFF50 /* Assets.xcassets */,
+				AD00158023693932003EFF50 /* LaunchScreen.storyboard */,
+				AD00158323693932003EFF50 /* Info.plist */,
+				AD00158423693932003EFF50 /* main.m */,
+			);
+			path = NSPredicate;
+			sourceTree = "<group>";
+		};
+		AD00158D23693932003EFF50 /* NSPredicateTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD00158E23693932003EFF50 /* NSPredicateTests.m */,
+				AD00159023693932003EFF50 /* Info.plist */,
+			);
+			path = NSPredicateTests;
+			sourceTree = "<group>";
+		};
+		AD00159823693932003EFF50 /* NSPredicateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD00159923693932003EFF50 /* NSPredicateUITests.m */,
+				AD00159B23693932003EFF50 /* Info.plist */,
+			);
+			path = NSPredicateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD00157123693930003EFF50 /* NSPredicate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD00159E23693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicate" */;
+			buildPhases = (
+				AD00156E23693930003EFF50 /* Sources */,
+				AD00156F23693930003EFF50 /* Frameworks */,
+				AD00157023693930003EFF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSPredicate;
+			productName = NSPredicate;
+			productReference = AD00157223693930003EFF50 /* NSPredicate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD00158923693932003EFF50 /* NSPredicateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0015A123693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicateTests" */;
+			buildPhases = (
+				AD00158623693932003EFF50 /* Sources */,
+				AD00158723693932003EFF50 /* Frameworks */,
+				AD00158823693932003EFF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD00158C23693932003EFF50 /* PBXTargetDependency */,
+			);
+			name = NSPredicateTests;
+			productName = NSPredicateTests;
+			productReference = AD00158A23693932003EFF50 /* NSPredicateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD00159423693932003EFF50 /* NSPredicateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0015A423693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicateUITests" */;
+			buildPhases = (
+				AD00159123693932003EFF50 /* Sources */,
+				AD00159223693932003EFF50 /* Frameworks */,
+				AD00159323693932003EFF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD00159723693932003EFF50 /* PBXTargetDependency */,
+			);
+			name = NSPredicateUITests;
+			productName = NSPredicateUITests;
+			productReference = AD00159523693932003EFF50 /* NSPredicateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD00156A23693930003EFF50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = D;
+				TargetAttributes = {
+					AD00157123693930003EFF50 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AD00158923693932003EFF50 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AD00157123693930003EFF50;
+					};
+					AD00159423693932003EFF50 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AD00157123693930003EFF50;
+					};
+				};
+			};
+			buildConfigurationList = AD00156D23693930003EFF50 /* Build configuration list for PBXProject "NSPredicate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD00156923693930003EFF50;
+			productRefGroup = AD00157323693930003EFF50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD00157123693930003EFF50 /* NSPredicate */,
+				AD00158923693932003EFF50 /* NSPredicateTests */,
+				AD00159423693932003EFF50 /* NSPredicateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD00157023693930003EFF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00158223693932003EFF50 /* LaunchScreen.storyboard in Resources */,
+				AD00157F23693932003EFF50 /* Assets.xcassets in Resources */,
+				AD0015AC23693990003EFF50 /* doctor.json in Resources */,
+				AD00157D23693931003EFF50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00158823693932003EFF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00159323693932003EFF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD00156E23693930003EFF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00157A23693931003EFF50 /* ViewController.m in Sources */,
+				AD00158523693932003EFF50 /* main.m in Sources */,
+				AD0015AE23693990003EFF50 /* Person.m in Sources */,
+				AD0015AD23693990003EFF50 /* Doctor.m in Sources */,
+				AD00157723693930003EFF50 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00158623693932003EFF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00158F23693932003EFF50 /* NSPredicateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD00159123693932003EFF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00159A23693932003EFF50 /* NSPredicateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD00158C23693932003EFF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD00157123693930003EFF50 /* NSPredicate */;
+			targetProxy = AD00158B23693932003EFF50 /* PBXContainerItemProxy */;
+		};
+		AD00159723693932003EFF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD00157123693930003EFF50 /* NSPredicate */;
+			targetProxy = AD00159623693932003EFF50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD00157B23693931003EFF50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD00157C23693931003EFF50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD00158023693932003EFF50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD00158123693932003EFF50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD00159C23693932003EFF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD00159D23693932003EFF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD00159F23693932003EFF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD0015A023693932003EFF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD0015A223693932003EFF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSPredicate.app/NSPredicate";
+			};
+			name = Debug;
+		};
+		AD0015A323693932003EFF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSPredicate.app/NSPredicate";
+			};
+			name = Release;
+		};
+		AD0015A523693932003EFF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NSPredicate;
+			};
+			name = Debug;
+		};
+		AD0015A623693932003EFF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NSPredicateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSPredicateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NSPredicate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD00156D23693930003EFF50 /* Build configuration list for PBXProject "NSPredicate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00159C23693932003EFF50 /* Debug */,
+				AD00159D23693932003EFF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD00159E23693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00159F23693932003EFF50 /* Debug */,
+				AD0015A023693932003EFF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0015A123693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0015A223693932003EFF50 /* Debug */,
+				AD0015A323693932003EFF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0015A423693932003EFF50 /* Build configuration list for PBXNativeTarget "NSPredicateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0015A523693932003EFF50 /* Debug */,
+				AD0015A623693932003EFF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD00156A23693930003EFF50 /* Project object */;
+}

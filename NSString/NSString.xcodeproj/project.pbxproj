@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD00156523688309003EFF50 /* NSMutableData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00156423688309003EFF50 /* NSMutableData+Extension.m */; };
 		ADAFCCD722955CB60094BEF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFCCD622955CB60094BEF9 /* AppDelegate.m */; };
 		ADAFCCDA22955CB60094BEF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFCCD922955CB60094BEF9 /* ViewController.m */; };
 		ADAFCCDD22955CB60094BEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAFCCDB22955CB60094BEF9 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD00156323688309003EFF50 /* NSMutableData+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Extension.h"; sourceTree = "<group>"; };
+		AD00156423688309003EFF50 /* NSMutableData+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Extension.m"; sourceTree = "<group>"; };
 		ADAFCCD222955CB60094BEF9 /* NSString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAFCCD522955CB60094BEF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADAFCCD622955CB60094BEF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				ADAFCCE022955CB80094BEF9 /* LaunchScreen.storyboard */,
 				ADAFCCE322955CB80094BEF9 /* Info.plist */,
 				ADAFCCE422955CB80094BEF9 /* main.m */,
+				AD00156323688309003EFF50 /* NSMutableData+Extension.h */,
+				AD00156423688309003EFF50 /* NSMutableData+Extension.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAFCCDA22955CB60094BEF9 /* ViewController.m in Sources */,
+				AD00156523688309003EFF50 /* NSMutableData+Extension.m in Sources */,
 				ADAFCCE522955CB80094BEF9 /* main.m in Sources */,
 				ADAFCCD722955CB60094BEF9 /* AppDelegate.m in Sources */,
 			);

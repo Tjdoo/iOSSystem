@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 
 /*   单例实现方式 2 */
-@interface Singleton2 : NSObject
+@interface Singleton2 : NSObject <NSCopying, NSMutableCopying>
 
 + (instancetype)sharedSingleton;
 + (void)deallocSingleton;
+
++ (instancetype)new __attribute__((unavailable("Singleton2类只能初始化一次")));
+- (instancetype)copy __attribute__((unavailable("Singleton2类只能初始化一次")));
+- (instancetype)mutableCopy __attribute__((unavailable("Singleton2类只能初始化一次")));
 
 @end

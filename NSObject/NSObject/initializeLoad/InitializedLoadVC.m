@@ -9,6 +9,7 @@
 #import "InitializedLoadVC.h"
 #import "Child.h"
 #import "Person.h"
+#import "Son.h"
 
 
 @interface InitializedLoadVC ()
@@ -38,10 +39,13 @@
     
     // +load 启动时调用，+initialize 初始时调用，只调用一次
     Person * p1 = [[Person alloc] init];
-    Person * p2 = [[Person alloc] init];
+    Son * s2 = [[Son alloc] init];
     
 //    NSLog(@"%d", p1->__a);  // Instance variable '__a' is protected
 //    NSLog(@"%@", p1.b);
+    
+    [s2 sayHello];
+    [p1 sayHello];
 }
 
 @end

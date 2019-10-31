@@ -42,4 +42,9 @@
     return [super init];
 }
 
+- (void)sayHello
+{
+    [self doesNotRecognizeSelector:_cmd];
+}
+
 @end
