@@ -27,6 +27,9 @@
 		AD5F33F52363381700FDA91F /* InitializedLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33F42363381700FDA91F /* InitializedLoadVC.m */; };
 		AD9AA2DF2363325E00ABC82F /* InitializedLoad.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */; };
 		ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC406A422D9D196002F05C0 /* ProtocolCls.m */; };
+		ADCA0ADE236FD2D100DF6AE0 /* CopyDeepCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA0ADD236FD2D100DF6AE0 /* CopyDeepCopyVC.m */; };
+		ADCA0AE0236FD43C00DF6AE0 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCA0ADF236FD43C00DF6AE0 /* Copy.png */; };
+		ADCA0AE3236FEC2A00DF6AE0 /* Copy_Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA0AE2236FEC2A00DF6AE0 /* Copy_Custom.m */; };
 		ADE9B2E2236338AA00B16F2D /* ProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE9B2E1236338AA00B16F2D /* ProtocolVC.m */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,11 @@
 		AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InitializedLoad.md; sourceTree = "<group>"; };
 		ADC406A322D9D196002F05C0 /* ProtocolCls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolCls.h; sourceTree = "<group>"; };
 		ADC406A422D9D196002F05C0 /* ProtocolCls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolCls.m; sourceTree = "<group>"; };
+		ADCA0ADC236FD2D100DF6AE0 /* CopyDeepCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyDeepCopyVC.h; sourceTree = "<group>"; };
+		ADCA0ADD236FD2D100DF6AE0 /* CopyDeepCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyDeepCopyVC.m; sourceTree = "<group>"; };
+		ADCA0ADF236FD43C00DF6AE0 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Copy.png; sourceTree = "<group>"; };
+		ADCA0AE1236FEC2A00DF6AE0 /* Copy_Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Copy_Custom.h; sourceTree = "<group>"; };
+		ADCA0AE2236FEC2A00DF6AE0 /* Copy_Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Copy_Custom.m; sourceTree = "<group>"; };
 		ADE9B2E0236338AA00B16F2D /* ProtocolVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolVC.h; sourceTree = "<group>"; };
 		ADE9B2E1236338AA00B16F2D /* ProtocolVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +149,7 @@
 				AD50C17522D47D8F009E3270 /* Singleton */,
 				AD50C17C22D47E4C009E3270 /* initializeLoad */,
 				ADC406A222D9D14D002F05C0 /* Protocol */,
+				ADCA0ADB236FD2AE00DF6AE0 /* Copy */,
 				AD50C14322D47D48009E3270 /* AppDelegate.h */,
 				AD50C14422D47D48009E3270 /* AppDelegate.m */,
 				AD5F33ED236336C400FDA91F /* MainVC.h */,
@@ -215,6 +224,18 @@
 				ADC406A422D9D196002F05C0 /* ProtocolCls.m */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		ADCA0ADB236FD2AE00DF6AE0 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				ADCA0ADF236FD43C00DF6AE0 /* Copy.png */,
+				ADCA0ADC236FD2D100DF6AE0 /* CopyDeepCopyVC.h */,
+				ADCA0ADD236FD2D100DF6AE0 /* CopyDeepCopyVC.m */,
+				ADCA0AE1236FEC2A00DF6AE0 /* Copy_Custom.h */,
+				ADCA0AE2236FEC2A00DF6AE0 /* Copy_Custom.m */,
+			);
+			path = Copy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +343,7 @@
 			files = (
 				AD50C18622D47EA3009E3270 /* InitializeLoad.pdf in Resources */,
 				AD50C15022D47D49009E3270 /* LaunchScreen.storyboard in Resources */,
+				ADCA0AE0236FD43C00DF6AE0 /* Copy.png in Resources */,
 				AD9AA2DF2363325E00ABC82F /* InitializedLoad.md in Resources */,
 				AD50C14D22D47D49009E3270 /* Assets.xcassets in Resources */,
 				AD50C14B22D47D48009E3270 /* Main.storyboard in Resources */,
@@ -361,6 +383,8 @@
 				AD50C15322D47D4A009E3270 /* main.m in Sources */,
 				ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */,
 				AD50C18722D47EA3009E3270 /* Child.m in Sources */,
+				ADCA0ADE236FD2D100DF6AE0 /* CopyDeepCopyVC.m in Sources */,
+				ADCA0AE3236FEC2A00DF6AE0 /* Copy_Custom.m in Sources */,
 				ADE9B2E2236338AA00B16F2D /* ProtocolVC.m in Sources */,
 				AD50C14522D47D48009E3270 /* AppDelegate.m in Sources */,
 			);

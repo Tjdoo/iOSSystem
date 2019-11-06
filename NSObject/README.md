@@ -1,10 +1,10 @@
 # NSObject
 
-1. 单例类的实现
+1. > 单例类的实现
 
-2. +load 和 + (void)initialize 的区别
+2. > +load 和 + (void)initialize 的区别
 
-3. 属性声明在 @implementation 里与 extension 里的区别
+3. > 属性声明在 @implementation 里与 extension 里的区别
 
 	```
 	@interface Car () {
@@ -29,3 +29,14 @@
 	* @ property 既可以直接访问 _engine 成员变量，又可以通过点语法，调用 get 方法。
 	
 	[iOS 属性声明在@implementation里与extension里的区别](https://blog.csdn.net/zhongbeida_xue/article/details/51456858)
+	
+4. > ios中的拷贝你知道多少？
+
+	[ios中的拷贝你知道多少？](https://www.jianshu.com/p/4e5fde48fcda)
+	
+5. > 线程与 KVO 的关系
+
+	|触发 KVO 的线程|KVO 监听方法内的线程|
+	|:-----:|:------:|
+	|主线程|主线程|
+	|非主线程|非主线程|

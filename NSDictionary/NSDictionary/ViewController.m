@@ -30,6 +30,7 @@
     [self __testAddEntriesFromDictionary];
     [self __testCustomKey];
     [self __testHash];
+    [self __testCluster];
 }
 
 - (void)__testAddEntriesFromDictionary
@@ -107,6 +108,53 @@
     
     NSLog(@"allKeys ---> %@", [mDict allKeys]);  // 值与 key1、key2、key3 不同，因为使用 key 时调用了 NSCoping 协议方法
     NSLog(@"allValues ---> %@", [mDict allValues]);
+}
+
+/**
+  *  @brief   字典的类簇
+  */
+- (void)__testCluster
+{
+    // 不可变
+    NSDictionary * allocDictionary = [NSDictionary alloc];
+    NSLog(@"%@", [allocDictionary class]); // __NSPlaceholderDictionary
+    
+    NSDictionary * initDictionary = [[NSDictionary alloc] init];
+    NSLog(@"%@", [initDictionary class]);  // __NSDictionary0
+    
+    NSDictionary * singleObjectDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@"Tom", @"name", nil];
+    NSLog(@"%@", [singleObjectDictionary class]);  // __NSSingleEntryDictionaryI
+    
+    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:@"Tom", @"name", @"11", @"age", nil];
+    NSLog(@"%@", [dict class]);  // __NSDictionaryI
+    
+    
+    // 可变
+    NSMutableDictionary * allocMutableDictionary = [NSMutableDictionary alloc];
+    NSLog(@"%@", [allocMutableDictionary class]);  // __NSPlaceholderDictionary
+    
+    NSMutableDictionary * initMutableDictionary = [[NSMutableDictionary alloc] init];
+    NSLog(@"%@", [initMutableDictionary class]);  // __NSDictionaryM
+    
+    NSMutableDictionary * singleObjectMutableDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"Tom", @"name", nil];
+    NSLog(@"%@", [singleObjectMutableDictionary class]);  // __NSDictionaryM
+    
+    NSMutableDictionary * mutableDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"Tom", @"name", @"11", @"age", nil];
+    NSLog(@"%@", [mutableDict class]);  // __NSDictionaryM
+    
+    
+    // 拷贝
+    NSDictionary * copyDict = [dict copy];
+    NSLog(@"%@", [copyDict class]);  // __NSDictionaryI
+
+    NSDictionary * mutableCopyDict = [dict mutableCopy];
+    NSLog(@"%@", [mutableCopyDict class]);  // __NSDictionaryM
+
+    NSMutableDictionary * copyMutableDict = [mutableDict copy];
+    NSLog(@"%@", [copyMutableDict class]);  // __NSFrozenDictionaryM
+    
+    NSMutableDictionary * mutableCopyMutableDict = [mutableDict mutableCopy];
+    NSLog(@"%@", [mutableCopyMutableDict class]);  // __NSDictionaryM
 }
 
 @end

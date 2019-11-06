@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9083D92371BCF2003918ED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9083D82371BCF2003918ED /* icon.png */; };
+		AD9083E62372EC1F003918ED /* HookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9083E42372EC1F003918ED /* HookTool.m */; };
 		ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842B922D35EAF00FD30D6 /* AppDelegate.m */; };
 		ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842BC22D35EAF00FD30D6 /* ViewController.m */; };
 		ADC842C022D35EAF00FD30D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC842BE22D35EAF00FD30D6 /* Main.storyboard */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD9083D82371BCF2003918ED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AD9083E42372EC1F003918ED /* HookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookTool.m; sourceTree = "<group>"; };
+		AD9083E52372EC1F003918ED /* HookTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookTool.h; sourceTree = "<group>"; };
 		ADC842B522D35EAF00FD30D6 /* UIImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC842B822D35EAF00FD30D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADC842B922D35EAF00FD30D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,10 +106,13 @@
 		ADC842B722D35EAF00FD30D6 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				AD9083E52372EC1F003918ED /* HookTool.h */,
+				AD9083E42372EC1F003918ED /* HookTool.m */,
 				ADC842B822D35EAF00FD30D6 /* AppDelegate.h */,
 				ADC842B922D35EAF00FD30D6 /* AppDelegate.m */,
 				ADC842BB22D35EAF00FD30D6 /* ViewController.h */,
 				ADC842BC22D35EAF00FD30D6 /* ViewController.m */,
+				AD9083D82371BCF2003918ED /* icon.png */,
 				ADC842BE22D35EAF00FD30D6 /* Main.storyboard */,
 				ADC842C122D35EB000FD30D6 /* Assets.xcassets */,
 				ADC842C322D35EB000FD30D6 /* LaunchScreen.storyboard */,
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9083D92371BCF2003918ED /* icon.png in Resources */,
 				ADC842C522D35EB000FD30D6 /* LaunchScreen.storyboard in Resources */,
 				ADC842C222D35EB000FD30D6 /* Assets.xcassets in Resources */,
 				ADC842C022D35EAF00FD30D6 /* Main.storyboard in Resources */,
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9083E62372EC1F003918ED /* HookTool.m in Sources */,
 				ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */,
 				ADC842C822D35EB000FD30D6 /* main.m in Sources */,
 				ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */,
@@ -435,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
 				INFOPLIST_FILE = UIImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,6 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,7 +465,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
 				INFOPLIST_FILE = UIImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

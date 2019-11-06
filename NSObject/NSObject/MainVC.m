@@ -8,6 +8,16 @@
 
 #import "MainVC.h"
 
+
+@interface KVO_Person : NSObject
+@property (nonatomic, copy) NSString * name;
+@end
+
+@implementation KVO_Person
+@end
+
+
+
 @interface MainVC ()
 
 @property (nonatomic, copy) NSArray * dataArray;
@@ -22,6 +32,35 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [UIView new];
+
+    [self __testKVO];
+}
+
+/**
+  *  @brief   测试 kvo 受线程的影响
+  */
+- (void)__testKVO
+{
+    NSLog(@"**********************");
+
+    KVO_Person * p = [[KVO_Person alloc] init];
+    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(2);
+        NSLog(@"AsyncThread: %@", [NSThread currentThread]);
+        p.name = @"aa";
+    });
+    NSLog(@"%@", [NSThread currentThread]);
+    p.name = @"bb";
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    NSLog(@"**********************");
+    NSLog(@"currentThread: %@", [NSThread currentThread]);
+    NSLog(@"mainThread: %@", [NSThread mainThread]);
+    NSLog(@"%@", change[NSKeyValueChangeNewKey]);
 }
 
 
@@ -55,7 +94,8 @@
     if (_dataArray == nil) {
         _dataArray = @[ @{ @"title" : @"1. 单例类", @"vcSBID" : @"SingletonVC_SBID" },
                         @{ @"title" : @"2. +initialize 和 +load", @"vcSBID" : @"InitializedLoadVC_SBID" },
-                        @{ @"title" : @"3. 分类", @"vcSBID" : @"ProtocolVC_SBID" } ];
+                        @{ @"title" : @"3. 分类", @"vcSBID" : @"ProtocolVC_SBID" },
+                        @{ @"title" : @"4. 深浅拷贝", @"vcSBID" : @"CopyDeepCopyVC_SBID" } ];
     }
     return _dataArray;
 }

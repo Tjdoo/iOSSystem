@@ -21,8 +21,9 @@
 {
     [super viewDidLoad];
     
-    [self nscopyDemo];
-    [self nscodingDemo];
+    [self __testNSCoping];
+    [self __testNSCoding];
+    [self __testCluster];
 }
 
 /**
@@ -30,7 +31,7 @@
   *  @see   【iOS对象数组的深copy】（https://www.jianshu.com/p/921f35d81e00）
   *  @see   【NSCopying和NSMutableCopying协议】（https://www.jianshu.com/p/f84803356cbb）
   */
-- (void)nscopyDemo
+- (void)__testNSCoping
 {
     NSLog(@"******************  NSCoping  *****************\n");
     
@@ -59,7 +60,10 @@
     NSLog(@"%@ , person1 = %@", copyedModel, [copyedModel.persons.firstObject name]);
 }
 
-- (void)nscodingDemo
+/**
+  *  @brief   演示 NSCoding 的作用
+  */
+- (void)__testNSCoding
 {
     NSLog(@"******************  NSCoding  *****************\n");
 
@@ -82,6 +86,52 @@
 
     NSLog(@"%@ , person1 = %@", model, [model.persons.firstObject name]);
     NSLog(@"%@ , person1 = %@", codingModel, [codingModel.persons.firstObject name]);
+}
+
+/**
+  *  @brief   类簇
+  */
+- (void)__testCluster
+{
+    // 不可变数组
+    NSArray * allocArray = [NSArray alloc];
+    NSLog(@"%@", [allocArray class]);  // __NSPlaceholderArray
+    
+    NSArray * initArray = [[NSArray alloc] init];
+    NSLog(@"%@", [initArray class]);  // __NSArray0
+    
+    NSArray * singleObjectArray = [[NSArray alloc] initWithObjects:@"123", nil];
+    NSLog(@"%@", [singleObjectArray class]);  // __NSSingleObjectArrayI
+
+    NSArray * arr = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", nil];
+    NSLog(@"%@", [arr class]);  // __NSArrayI
+    
+    // 可变数组
+    NSMutableArray * allocMutableArray = [NSMutableArray alloc];
+    NSLog(@"%@", [allocMutableArray class]);  // __NSPlaceholderArray
+    
+    NSMutableArray * initMutableArray = [[NSMutableArray alloc] init];
+    NSLog(@"%@", [initMutableArray class]);  // __NSArrayM
+    
+    NSMutableArray * singleObjectMutableArray = [[NSMutableArray alloc] initWithObjects:@"123", nil];
+    NSLog(@"%@", [singleObjectMutableArray class]); // __NSArrayM
+    
+    NSMutableArray * mutableArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", nil];
+    NSLog(@"%@", [mutableArray class]);  // __NSArrayM
+    
+    
+    // 拷贝
+    NSArray * copyArray = [arr copy];
+    NSLog(@"%@", [copyArray class]);  // __NSArrayI
+    
+    NSArray * mutableCopyArray = [arr mutableCopy];
+    NSLog(@"%@", [mutableCopyArray class]);  // __NSArrayM
+
+    NSMutableArray * copyMutableArray = [mutableArray copy];
+    NSLog(@"%@", [copyMutableArray class]);  // __NSArrayI
+
+    NSMutableArray * mutableCopyMutableArray = [mutableArray mutableCopy];
+    NSLog(@"%@", [mutableCopyMutableArray class]);  // __NSArrayM
 }
 
 @end

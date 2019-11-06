@@ -24,5 +24,4 @@
     self.label.text = @"中华人民共和国";
 }
 
-
 @end

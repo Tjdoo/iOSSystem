@@ -11,3 +11,7 @@
 	[originImage drawInRect:bounds blendMode:kCGBlendModeOverlay alpha:1.0];
 	[originImage drawInRect:bounds blendMode:kCGBlendModeDestinationIn alpha:1.0];
 	```
+	
+4. 处理模块化工程图片加载
+	
+	HookTool.h、HookTool.m 处理图片资源不在 mainBundle 中，xib 设置图片名称无效的问题。

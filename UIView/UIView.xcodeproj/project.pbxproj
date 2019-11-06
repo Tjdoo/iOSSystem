@@ -10,6 +10,7 @@
 		AD0015102366DC87003EFF50 /* CornerRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD00150F2366DC87003EFF50 /* CornerRadiusView.m */; };
 		AD0015172366E283003EFF50 /* 图-0.png in Resources */ = {isa = PBXBuildFile; fileRef = AD0015152366E283003EFF50 /* 图-0.png */; };
 		AD0015182366E283003EFF50 /* 图-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD0015162366E283003EFF50 /* 图-1.png */; };
+		AD27153423703CA4004DFEAB /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD27153323703CA4004DFEAB /* UIView+Layout.m */; };
 		AD29F76D22BA4914009462DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F76C22BA4914009462DB /* AppDelegate.m */; };
 		AD29F77022BA4914009462DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F76F22BA4914009462DB /* ViewController.m */; };
 		AD29F77322BA4914009462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD29F77122BA4914009462DB /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		AD00150F2366DC87003EFF50 /* CornerRadiusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusView.m; sourceTree = "<group>"; };
 		AD0015152366E283003EFF50 /* 图-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图-0.png"; sourceTree = "<group>"; };
 		AD0015162366E283003EFF50 /* 图-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图-1.png"; sourceTree = "<group>"; };
+		AD27153223703CA4004DFEAB /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		AD27153323703CA4004DFEAB /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		AD29F76822BA4914009462DB /* UIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD29F76B22BA4914009462DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD29F76C22BA4914009462DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				AD00150F2366DC87003EFF50 /* CornerRadiusView.m */,
 				AD29F79E22BA493A009462DB /* UIView+CornerRadius.h */,
 				AD29F79D22BA493A009462DB /* UIView+CornerRadius.m */,
+				AD27153223703CA4004DFEAB /* UIView+Layout.h */,
+				AD27153323703CA4004DFEAB /* UIView+Layout.m */,
 				AD29F76B22BA4914009462DB /* AppDelegate.h */,
 				AD29F76C22BA4914009462DB /* AppDelegate.m */,
 				AD29F76E22BA4914009462DB /* ViewController.h */,
@@ -282,6 +287,7 @@
 			files = (
 				AD29F77022BA4914009462DB /* ViewController.m in Sources */,
 				AD0015102366DC87003EFF50 /* CornerRadiusView.m in Sources */,
+				AD27153423703CA4004DFEAB /* UIView+Layout.m in Sources */,
 				AD29F79F22BA493A009462DB /* UIView+CornerRadius.m in Sources */,
 				AD29F77B22BA4915009462DB /* main.m in Sources */,
 				AD29F76D22BA4914009462DB /* AppDelegate.m in Sources */,

@@ -66,7 +66,19 @@
                     <view key="view" contentMode="scaleToFill" id="0Rh-P3-YoJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单例类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tH-vD-haR">
+                                <rect key="frame" x="142" y="315.5" width="91" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4tH-vD-haR" firstAttribute="centerY" secondItem="0Rh-P3-YoJ" secondAttribute="centerY" id="eBR-BC-7Jo"/>
+                            <constraint firstItem="4tH-vD-haR" firstAttribute="centerX" secondItem="0Rh-P3-YoJ" secondAttribute="centerX" id="j5h-Fe-KsA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQw-OB-sa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,12 +96,54 @@
                     <view key="view" contentMode="scaleToFill" id="Ntr-cb-1eM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+initialize 和 +load" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-oU-evi">
+                                <rect key="frame" x="58.5" y="315.5" width="258.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eLz-oU-evi" firstAttribute="centerX" secondItem="Ntr-cb-1eM" secondAttribute="centerX" id="MMA-K5-Vlx"/>
+                            <constraint firstItem="eLz-oU-evi" firstAttribute="centerY" secondItem="Ntr-cb-1eM" secondAttribute="centerY" id="OgG-Sh-4Su"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVZ-Nw-keU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1100" y="940"/>
+        </scene>
+        <!--Copy Deep CopyVC-->
+        <scene sceneID="DFa-o9-ht3">
+            <objects>
+                <viewController storyboardIdentifier="CopyDeepCopyVC_SBID" id="br2-1F-dJY" customClass="CopyDeepCopyVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KWX-nA-Wiv"/>
+                        <viewControllerLayoutGuide type="bottom" id="MbK-AI-InP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xHN-Hc-awq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深浅拷贝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVz-G9-LJe">
+                                <rect key="frame" x="127" y="315.5" width="121.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EVz-G9-LJe" firstAttribute="centerY" secondItem="xHN-Hc-awq" secondAttribute="centerY" id="8I7-im-Xuk"/>
+                            <constraint firstItem="EVz-G9-LJe" firstAttribute="centerX" secondItem="xHN-Hc-awq" secondAttribute="centerX" id="H1K-2X-thZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDB-ND-YMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="940"/>
         </scene>
         <!--分类-->
         <scene sceneID="f5Q-nw-y6c">
@@ -102,7 +156,19 @@
                     <view key="view" contentMode="scaleToFill" id="EeS-0R-QaT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分类 Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-PP-I8z">
+                                <rect key="frame" x="89" y="315.5" width="197" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eOW-PP-I8z" firstAttribute="centerY" secondItem="EeS-0R-QaT" secondAttribute="centerY" id="XIL-jD-zFb"/>
+                            <constraint firstItem="eOW-PP-I8z" firstAttribute="centerX" secondItem="EeS-0R-QaT" secondAttribute="centerX" id="aht-Ga-3Se"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIN-QO-4Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>

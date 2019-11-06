@@ -28,7 +28,9 @@
     
     NSLog(@"银行卡号：%@s", [self getNewBankNum:@"6227273827638465" whiteSpaceCount:1]);
     
-    [self __nsDataAppendString];
+    [self __testNSDataAppendString];
+    [self __testCluster];
+    [self __testFormat];
 }
 
 /**
@@ -91,16 +93,55 @@
     return [newString stringByTrimmingCharactersInSet:[cs invertedSet]];
 }
 
-- (void)__nsDataAppendString
+- (void)__testNSDataAppendString
 {
+    NSLog(@"*********************");
+
     NSString * string = @"hello, this is a test\n";
     NSData * data1 = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData * data2 = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData * data3 = [string dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSLog(@"data1 address: %zd", [data1 bytes]);
-    NSLog(@"data2 address: %zd", [data2 bytes]);
-    NSLog(@"data3 address: %zd", [data3 bytes]);
+    NSLog(@"data1 address: %ld", (long)[data1 bytes]);
+    NSLog(@"data2 address: %ld", (long)[data2 bytes]);
+    NSLog(@"data3 address: %ld", (long)[data3 bytes]);
+}
+
+/**
+  *  @brief   NSString 类簇
+  */
+- (void)__testCluster
+{
+    NSLog(@"*********************");
+    
+    NSString * str1 = @"1234567890";
+    NSLog(@"str1: %@", [str1 class]);  // str1: __NSCFConstantString
+    
+    NSString * str2 = @"123456789";
+    NSLog(@"str2: %@", [str2 class]);  //str2: __NSCFConstantString
+    
+    NSString * str3 = [NSString stringWithFormat:@"123456789"];
+    NSLog(@"str3: %@", [str3 class]);  // str3: NSTaggedPointerString
+    
+    NSString * str4 = [NSString stringWithFormat:@"1234567890"];
+    NSLog(@"str4: %@", [str4 class]);  // str4: __NSCFString
+}
+
+/**
+  *  @brief   测试 appendFormat: 和 appendString:
+  */
+- (void)__testFormat
+{
+    NSLog(@"*********************");
+
+    NSMutableString * mString = [NSMutableString stringWithCapacity:10];
+    NSString * string = nil;
+    
+    [mString appendFormat:@"%@", string];
+    
+//    [mString appendString:string]; // 崩溃原因 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFString appendString:]: nil argument'
+    
+    NSLog(@"%@", mString);
 }
 
 @end
