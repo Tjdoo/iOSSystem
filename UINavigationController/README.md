@@ -31,8 +31,12 @@
 2. > 设置 navigationbar.translucent = NO 时，视图控制器整体下移
 
 	self.extendedLayoutIncludesOpaqueBars = YES; 或者 xib、storyboard 中勾选 Under Opaque Bars。
+	
+    self.edgesForExtendedLayout = UIRectEdgeTop;  自动处理导航栏 64pt
 
 3. > translucent
 
 	[iOS translucent引发的那点小事](https://www.jianshu.com/p/a75632bab095)
 	[鬼魅的“64边距”——translucent属性](https://www.jianshu.com/p/930643270455)
+	
+	
