@@ -1,0 +1,128 @@
+<!doctype html>
+<html><head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style type='text/css'>
+		html { font-family:Helvetica; color:#222; }
+		h1 { color:steelblue; font-size:24px; margin-top:24px; }
+		button { margin:0 3px 10px; font-size:12px; }
+		.logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; font-size:11px; }
+	</style>
+</head><body>
+    
+	<h1>日志页面</h1>
+    <div id='buttons'></div>
+    <div id='log'></div>
+    
+	<script>
+        
+        function finishAppJsInsert() {
+            alert("2222");
+            log("finishAppJsInsert注入完成");
+        }
+        
+<!--        setTimeout(function() {-->
+<!--                   JS_Call_APP('jumpToTelConsultForm', {'serviceId' : 'xxx', 'recordId': 'xxx'}, null);-->
+<!--                   }, 3)-->
+
+<!--        setTimeout(function() {-->
+<!--                   JS_Call_APP('goToWorkGroupDetail', {'openMode' : 1/2, 'serviceId': 'xxx'}, null-->
+<!--                               );-->
+<!--                   }, 3)-->
+
+    
+<!--    var WVJBIframe = document.createElement('iframe');-->
+<!--    WVJBIframe.style.display = 'none';-->
+<!--    WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';-->
+<!--    document.documentElement.appendChild(WVJBIframe);-->
+<!--    setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)-->
+
+    
+<!--    setTimeout(function() {-->
+<!--               JS_Call_APP('openBrowser', 'https://www.baidu.com', null);-->
+<!--               }, 3)-->
+
+
+<!--    setTimeout(function() {-->
+<!--               JS_Call_APP('addListener', 'browserState', function(status, msg){-->
+<!--                           appLog('APP调用成功返回:\n' + status +'浏览器状态:'+ msg);-->
+<!--                           }-->
+<!--                           );-->
+<!--               }, 3);-->
+
+<!--               setTimeout(function() {-->
+<!--                          JS_Call_APP('methodList', 'https://www.baidu.com', null);-->
+<!--                          }, 3);-->
+
+
+<!--setTimeout(function() {-->
+<!--           var serviceId = 2365;-->
+<!--           var serviceRecordId = 33312301;-->
+<!--           openConsultChat(serviceId+"|"+serviceRecordId+"|0");-->
+<!--           -->
+<!--           appLog(serviceId+"|"+serviceRecordId+"|0");-->
+<!--           JS_Call_APP('openConsultChat', serviceId+"|"+serviceRecordId+"|0", null);-->
+<!--           -->
+<!--           }, 3)-->
+
+<!--    var uniqueId = 1-->
+<!--    function log(message, data) {-->
+<!--        var log = document.getElementById('log')-->
+<!--        var el = document.createElement('div')-->
+<!--        el.innerHTML = uniqueId++ + '. ' + message-->
+<!--        if (data) { el.innerHTML += ':<br/>' + JSON.stringify(data) }-->
+<!--        if (log.children.length) { log.insertBefore(el, log.children[0]) }-->
+<!--        else { log.appendChild(el) }-->
+<!--    }-->
+
+<!--    log('欢迎进入测试...')-->
+
+
+<!--        setTimeout(function() {-->
+<!--                        JS_Call_APP('openBrowser', 'http://devweixinpn.love-health.com.cn//suv/2702/2/1/3.542/question_fill?repeatFill=2&fromBackTo=2', null-->
+<!--                                    );-->
+<!--                   }, 3)-->
+
+
+
+<!--    setTimeout(function() {-->
+<!--               JS_Call_APP('',-->
+<!--                           {className : 'self',-->
+<!--                                    methodName : ['backPage:'],-->
+<!--                                    data : [true]-->
+<!--                                    }-->
+<!--                           )-->
+<!--               } , 5);-->
+
+    
+<!--    setTimeout(function() {-->
+<!--               JS_Call_APP('',-->
+<!--                           {'className' : 'CYKJXUtil',-->
+<!--                           'methodName' : ['+pushLoginVC'],-->
+<!--                           'data' : [null]-->
+<!--                           }-->
+<!--                           )-->
+<!--               } , 5);-->
+
+    
+<!--    setTimeout(function() {-->
+<!--               JS_Call_APP('custom',-->
+<!--                           {'className' : 'UIAlertView',-->
+<!--                                    'methodName' : ['setTitle:', 'addButtonWithTitle:','addButtonWithTitle:','addButtonWithTitle:','setCancelButtonIndex:', 'show'],-->
+<!--                                    'data' : [['js创建'], '确定1', '确定2', '确定3',1, '']-->
+<!--                                    }-->
+<!--                          )-->
+<!--               } , 5);-->
+
+
+
+<!--    return;-->
+
+<!--    setTimeout(function() {JS_Call_APP('callPhone1', '123456', function(status, msg){-->
+<!--                                       log('APP调用成功返回' + status + msg);-->
+<!--                                       JS_Call_APP('appLog', 'APP调用成功返回' + status + msg, null);-->
+<!--                                       appLog('APP调用成功返回' + status + msg);-->
+<!--                                                 });  }, 3)-->
+
+
+	</script>
+</body></html>

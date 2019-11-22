@@ -40,3 +40,11 @@
 	|:-----:|:------:|
 	|主线程|主线程|
 	|非主线程|非主线程|
+	
+6. > KVO
+
+7. > inline static
+
+	[iOS OC内联函数 inline](https://www.jianshu.com/p/d557b0831c6a)
+	[OC中的静态（static）/ 内联（inline）函数](https://www.jianshu.com/p/7fb0008ed730)
+       [inline函数的好处与缺点](https://blog.csdn.net/tsinfeng/article/details/5871043)

@@ -7,20 +7,15 @@
 
 
 #import "MainVC.h"
-
-
-@interface KVO_Person : NSObject
-@property (nonatomic, copy) NSString * name;
-@end
-
-@implementation KVO_Person
-@end
-
+#import "KVO.h"
+#import "Inline.h"
+#import "Static.h"
 
 
 @interface MainVC ()
 
 @property (nonatomic, copy) NSArray * dataArray;
+@property (nonatomic, strong) KVO * kvo;
 
 @end
 
@@ -32,35 +27,14 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [UIView new];
-
-    [self __testKVO];
-}
-
-/**
-  *  @brief   测试 kvo 受线程的影响
-  */
-- (void)__testKVO
-{
-    NSLog(@"**********************");
-
-    KVO_Person * p = [[KVO_Person alloc] init];
-    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        sleep(2);
-        NSLog(@"AsyncThread: %@", [NSThread currentThread]);
-        p.name = @"aa";
-    });
-    NSLog(@"%@", [NSThread currentThread]);
-    p.name = @"bb";
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    NSLog(@"**********************");
-    NSLog(@"currentThread: %@", [NSThread currentThread]);
-    NSLog(@"mainThread: %@", [NSThread mainThread]);
-    NSLog(@"%@", change[NSKeyValueChangeNewKey]);
+    _kvo = [[KVO alloc] init];
+    [_kvo dowork];
+    
+    inlineFunc(@"inline func");
+    [[[Inline alloc] init] dowork];
+    
+    staticFunc();
 }
 
 

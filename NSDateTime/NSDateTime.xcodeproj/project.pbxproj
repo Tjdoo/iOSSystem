@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0F6EEC2382CC3A00AE92B9 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F6EEB2382CC3A00AE92B9 /* WeakProxy.m */; };
+		AD0F6EEF2382CE8F00AE92B9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F6EEE2382CE8F00AE92B9 /* SecondViewController.m */; };
 		AD50C0B222D46F77009E3270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C0B122D46F77009E3270 /* AppDelegate.m */; };
 		AD50C0B522D46F77009E3270 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C0B422D46F77009E3270 /* ViewController.m */; };
 		AD50C0B822D46F77009E3270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD50C0B622D46F77009E3270 /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0F6EEA2382CC3A00AE92B9 /* WeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		AD0F6EEB2382CC3A00AE92B9 /* WeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
+		AD0F6EED2382CE8F00AE92B9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AD0F6EEE2382CE8F00AE92B9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		AD50C0AD22D46F77009E3270 /* NSDateTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDateTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD50C0B022D46F77009E3270 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD50C0B122D46F77009E3270 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				AD50C0B122D46F77009E3270 /* AppDelegate.m */,
 				AD50C0B322D46F77009E3270 /* ViewController.h */,
 				AD50C0B422D46F77009E3270 /* ViewController.m */,
+				AD0F6EED2382CE8F00AE92B9 /* SecondViewController.h */,
+				AD0F6EEE2382CE8F00AE92B9 /* SecondViewController.m */,
 				AD50C0B622D46F77009E3270 /* Main.storyboard */,
 				AD50C0B922D46F79009E3270 /* Assets.xcassets */,
 				AD50C0BB22D46F79009E3270 /* LaunchScreen.storyboard */,
@@ -160,6 +168,8 @@
 				AD50C0F022D470A6009E3270 /* NSTimer+Brex.m */,
 				AD50C0EF22D470A6009E3270 /* Timer.h */,
 				AD50C0ED22D470A6009E3270 /* Timer.m */,
+				AD0F6EEA2382CC3A00AE92B9 /* WeakProxy.h */,
+				AD0F6EEB2382CC3A00AE92B9 /* WeakProxy.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -307,12 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0F6EEF2382CE8F00AE92B9 /* SecondViewController.m in Sources */,
 				AD50C0B522D46F77009E3270 /* ViewController.m in Sources */,
 				AD50C0E822D46FE9009E3270 /* TimeInterval.m in Sources */,
 				AD50C0EB22D47071009E3270 /* TimeStamp.m in Sources */,
 				AD50C0F222D470A6009E3270 /* Timer.m in Sources */,
 				AD50C0C022D46F79009E3270 /* main.m in Sources */,
 				AD50C0F422D470A6009E3270 /* BrexTimerTarget.m in Sources */,
+				AD0F6EEC2382CC3A00AE92B9 /* WeakProxy.m in Sources */,
 				AD50C0B222D46F77009E3270 /* AppDelegate.m in Sources */,
 				AD50C0F322D470A6009E3270 /* NSTimer+Brex.m in Sources */,
 			);

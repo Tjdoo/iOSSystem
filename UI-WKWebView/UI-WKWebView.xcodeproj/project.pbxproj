@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1335542387B10B00E9C2A0 /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1335532387B10B00E9C2A0 /* WKWebViewVC.m */; };
+		AD1335562387BA8000E9C2A0 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = AD1335552387BA8000E9C2A0 /* ExampleApp.html */; };
+		AD1335582387C1BA00E9C2A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD1335572387C1BA00E9C2A0 /* README.md */; };
 		ADC8427C22D35CC500FD30D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC8427B22D35CC500FD30D6 /* AppDelegate.m */; };
 		ADC8427F22D35CC500FD30D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC8427E22D35CC500FD30D6 /* ViewController.m */; };
 		ADC8428222D35CC500FD30D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC8428022D35CC500FD30D6 /* Main.storyboard */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1335522387B10B00E9C2A0 /* WKWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
+		AD1335532387B10B00E9C2A0 /* WKWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
+		AD1335552387BA8000E9C2A0 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		AD1335572387C1BA00E9C2A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ADC8427722D35CC500FD30D6 /* UI-WKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-WKWebView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC8427A22D35CC500FD30D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADC8427B22D35CC500FD30D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,10 +108,14 @@
 		ADC8427922D35CC500FD30D6 /* UI-WKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				AD1335572387C1BA00E9C2A0 /* README.md */,
 				ADC8427A22D35CC500FD30D6 /* AppDelegate.h */,
 				ADC8427B22D35CC500FD30D6 /* AppDelegate.m */,
 				ADC8427D22D35CC500FD30D6 /* ViewController.h */,
 				ADC8427E22D35CC500FD30D6 /* ViewController.m */,
+				AD1335522387B10B00E9C2A0 /* WKWebViewVC.h */,
+				AD1335532387B10B00E9C2A0 /* WKWebViewVC.m */,
+				AD1335552387BA8000E9C2A0 /* ExampleApp.html */,
 				ADC8428022D35CC500FD30D6 /* Main.storyboard */,
 				ADC8428322D35CC700FD30D6 /* Assets.xcassets */,
 				ADC8428522D35CC700FD30D6 /* LaunchScreen.storyboard */,
@@ -237,7 +248,9 @@
 			files = (
 				ADC8428722D35CC700FD30D6 /* LaunchScreen.storyboard in Resources */,
 				ADC8428422D35CC700FD30D6 /* Assets.xcassets in Resources */,
+				AD1335582387C1BA00E9C2A0 /* README.md in Resources */,
 				ADC8428222D35CC500FD30D6 /* Main.storyboard in Resources */,
+				AD1335562387BA8000E9C2A0 /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1335542387B10B00E9C2A0 /* WKWebViewVC.m in Sources */,
 				ADC8427F22D35CC500FD30D6 /* ViewController.m in Sources */,
 				ADC8428A22D35CC700FD30D6 /* main.m in Sources */,
 				ADC8427C22D35CC500FD30D6 /* AppDelegate.m in Sources */,

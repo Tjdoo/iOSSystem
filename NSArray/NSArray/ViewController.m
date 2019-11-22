@@ -24,6 +24,7 @@
     [self __testNSCoping];
     [self __testNSCoding];
     [self __testCluster];
+    [self __testSetNilInEnumerate];
 }
 
 /**
@@ -132,6 +133,30 @@
 
     NSMutableArray * mutableCopyMutableArray = [mutableArray mutableCopy];
     NSLog(@"%@", [mutableCopyMutableArray class]);  // __NSArrayM
+}
+
+/**
+  *  @brief   枚举遍历时赋值 nil
+  */
+- (void)__testSetNilInEnumerate
+{
+    NSLog(@"*********************");
+
+    UIViewController * vc1 = [[UIViewController alloc] init];
+    UIViewController * vc2 = [[UIViewController alloc] init];
+    
+    NSLog(@"vc1 = %p, vc2 = %p", vc1, vc2);
+    
+    NSArray * arr = [[NSArray alloc] initWithObjects:vc1, vc2, nil];
+    
+    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"obj = %p", obj);
+        obj = nil;  // 在枚举遍历 block 中无法将元素设置为空
+    }];
+    
+    NSLog(@"vc1 = %p, vc2 = %p", vc1, vc2);
+    
+    NSLog(@"%@", arr);
 }
 
 @end
