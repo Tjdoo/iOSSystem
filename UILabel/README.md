@@ -4,4 +4,6 @@
 
 2. > EvenDistributionLabel  文字横向均匀分布
 
-[iOS限制输入表情(emoji)，出现九宫格不能输入的解决方法](https://www.jianshu.com/p/d0f6c62b57e1)
+	[iOS限制输入表情(emoji)，出现九宫格不能输入的解决方法](https://www.jianshu.com/p/d0f6c62b57e1)
+
+3. > 文字渐变色

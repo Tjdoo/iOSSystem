@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD222843239000D7001FB83F /* GradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD222842239000D7001FB83F /* GradientLabel.m */; };
 		AD29F72922BA3183009462DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F72822BA3183009462DB /* AppDelegate.m */; };
 		AD29F72C22BA3183009462DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29F72B22BA3183009462DB /* ViewController.m */; };
 		AD29F72F22BA3183009462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD29F72D22BA3183009462DB /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD222841239000D7001FB83F /* GradientLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientLabel.h; sourceTree = "<group>"; };
+		AD222842239000D7001FB83F /* GradientLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientLabel.m; sourceTree = "<group>"; };
 		AD29F72422BA3183009462DB /* UILabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD29F72722BA3183009462DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD29F72822BA3183009462DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				AD29F75A22BA31AF009462DB /* UILabel+HTML.m */,
 				ADB20CCE22C1C5D5003EB727 /* EvenDistributionLabel.h */,
 				ADB20CCF22C1C5D5003EB727 /* EvenDistributionLabel.m */,
+				AD222841239000D7001FB83F /* GradientLabel.h */,
+				AD222842239000D7001FB83F /* GradientLabel.m */,
 				AD29F72722BA3183009462DB /* AppDelegate.h */,
 				AD29F72822BA3183009462DB /* AppDelegate.m */,
 				AD29F72A22BA3183009462DB /* ViewController.h */,
@@ -276,6 +281,7 @@
 				AD29F73722BA3186009462DB /* main.m in Sources */,
 				ADB20CD022C1C5D5003EB727 /* EvenDistributionLabel.m in Sources */,
 				AD29F72922BA3183009462DB /* AppDelegate.m in Sources */,
+				AD222843239000D7001FB83F /* GradientLabel.m in Sources */,
 				AD29F75B22BA31AF009462DB /* UILabel+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

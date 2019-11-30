@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD9083D92371BCF2003918ED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9083D82371BCF2003918ED /* icon.png */; };
+		AD2227BC238FE003001FB83F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2227BB238FE003001FB83F /* README.md */; };
+		AD2227BE238FE689001FB83F /* CapInsets.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2227BD238FE689001FB83F /* CapInsets.png */; };
+		AD9083D92371BCF2003918ED /* iicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9083D82371BCF2003918ED /* iicon.png */; };
 		AD9083E62372EC1F003918ED /* HookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9083E42372EC1F003918ED /* HookTool.m */; };
 		ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842B922D35EAF00FD30D6 /* AppDelegate.m */; };
 		ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842BC22D35EAF00FD30D6 /* ViewController.m */; };
@@ -17,6 +19,8 @@
 		ADC842C822D35EB000FD30D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842C722D35EB000FD30D6 /* main.m */; };
 		ADC842D222D35EB000FD30D6 /* UIImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842D122D35EB000FD30D6 /* UIImageTests.m */; };
 		ADC842DD22D35EB000FD30D6 /* UIImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842DC22D35EB000FD30D6 /* UIImageUITests.m */; };
+		ADE6D2F6238E6BB200C531A9 /* UIImage+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */; };
+		ADE6D2F9238E718C00C531A9 /* CornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD9083D82371BCF2003918ED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AD2227BB238FE003001FB83F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		AD2227BD238FE689001FB83F /* CapInsets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CapInsets.png; sourceTree = "<group>"; };
+		AD9083D82371BCF2003918ED /* iicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iicon.png; sourceTree = "<group>"; };
 		AD9083E42372EC1F003918ED /* HookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookTool.m; sourceTree = "<group>"; };
 		AD9083E52372EC1F003918ED /* HookTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookTool.h; sourceTree = "<group>"; };
 		ADC842B522D35EAF00FD30D6 /* UIImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +62,10 @@
 		ADC842D822D35EB000FD30D6 /* UIImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC842DC22D35EB000FD30D6 /* UIImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageUITests.m; sourceTree = "<group>"; };
 		ADC842DE22D35EB000FD30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE6D2F4238E6BB200C531A9 /* UIImage+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CornerRadius.h"; sourceTree = "<group>"; };
+		ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CornerRadius.m"; sourceTree = "<group>"; };
+		ADE6D2F7238E718C00C531A9 /* CornerRadiusVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerRadiusVC.h; sourceTree = "<group>"; };
+		ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +116,19 @@
 		ADC842B722D35EAF00FD30D6 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				AD2227BB238FE003001FB83F /* README.md */,
+				AD2227BD238FE689001FB83F /* CapInsets.png */,
 				AD9083E52372EC1F003918ED /* HookTool.h */,
 				AD9083E42372EC1F003918ED /* HookTool.m */,
 				ADC842B822D35EAF00FD30D6 /* AppDelegate.h */,
 				ADC842B922D35EAF00FD30D6 /* AppDelegate.m */,
 				ADC842BB22D35EAF00FD30D6 /* ViewController.h */,
 				ADC842BC22D35EAF00FD30D6 /* ViewController.m */,
-				AD9083D82371BCF2003918ED /* icon.png */,
+				ADE6D2F7238E718C00C531A9 /* CornerRadiusVC.h */,
+				ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */,
+				ADE6D2F4238E6BB200C531A9 /* UIImage+CornerRadius.h */,
+				ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */,
+				AD9083D82371BCF2003918ED /* iicon.png */,
 				ADC842BE22D35EAF00FD30D6 /* Main.storyboard */,
 				ADC842C122D35EB000FD30D6 /* Assets.xcassets */,
 				ADC842C322D35EB000FD30D6 /* LaunchScreen.storyboard */,
@@ -243,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9083D92371BCF2003918ED /* icon.png in Resources */,
+				AD2227BE238FE689001FB83F /* CapInsets.png in Resources */,
+				AD9083D92371BCF2003918ED /* iicon.png in Resources */,
 				ADC842C522D35EB000FD30D6 /* LaunchScreen.storyboard in Resources */,
+				AD2227BC238FE003001FB83F /* README.md in Resources */,
 				ADC842C222D35EB000FD30D6 /* Assets.xcassets in Resources */,
 				ADC842C022D35EAF00FD30D6 /* Main.storyboard in Resources */,
 			);
@@ -273,8 +291,10 @@
 			files = (
 				AD9083E62372EC1F003918ED /* HookTool.m in Sources */,
 				ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */,
+				ADE6D2F6238E6BB200C531A9 /* UIImage+CornerRadius.m in Sources */,
 				ADC842C822D35EB000FD30D6 /* main.m in Sources */,
 				ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */,
+				ADE6D2F9238E718C00C531A9 /* CornerRadiusVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyn.ps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,7 +494,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyn.ps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

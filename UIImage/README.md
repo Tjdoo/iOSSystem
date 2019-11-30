@@ -15,3 +15,7 @@
 4. 处理模块化工程图片加载
 	
 	HookTool.h、HookTool.m 处理图片资源不在 mainBundle 中，xib 设置图片名称无效的问题。
+
+5. > 圆角处理
+
+	[[iOS] 图像处理 - 一种高效裁剪图片圆角的算法](https://www.jianshu.com/p/bbb50b2cb7e6)

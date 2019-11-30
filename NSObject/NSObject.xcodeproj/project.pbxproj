@@ -16,6 +16,8 @@
 		AD0F6EE92382C7A900AE92B9 /* KVO_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F6EE82382C7A900AE92B9 /* KVO_Person.m */; };
 		AD0F6EF22382D1FA00AE92B9 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F6EF12382D1FA00AE92B9 /* Dog.m */; };
 		AD0F6EF82382D68800AE92B9 /* NSObject+MyKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F6EF72382D68800AE92B9 /* NSObject+MyKVO.m */; };
+		AD2227B5238F9D7C001FB83F /* TestKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2227B4238F9D7C001FB83F /* TestKVC.m */; };
+		AD2227BA238FD301001FB83F /* MainPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2227B9238FD301001FB83F /* MainPerson.m */; };
 		AD50C14522D47D48009E3270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50C14422D47D48009E3270 /* AppDelegate.m */; };
 		AD50C14B22D47D48009E3270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD50C14922D47D48009E3270 /* Main.storyboard */; };
 		AD50C14D22D47D49009E3270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD50C14C22D47D49009E3270 /* Assets.xcassets */; };
@@ -33,7 +35,7 @@
 		AD55FF7B2386B24200684E6C /* Static.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55FF7A2386B24200684E6C /* Static.m */; };
 		AD55FF7D2386BBEA00684E6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD55FF7C2386BBEA00684E6C /* README.md */; };
 		AD5F33EC2363363400FDA91F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33EB2363363400FDA91F /* Person.m */; };
-		AD5F33EF236336C400FDA91F /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33EE236336C400FDA91F /* MainVC.m */; };
+		AD5F33EF236336C400FDA91F /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33EE236336C400FDA91F /* MainVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD5F33F2236337EE00FDA91F /* SingletonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33F1236337EE00FDA91F /* SingletonVC.m */; };
 		AD5F33F52363381700FDA91F /* InitializedLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33F42363381700FDA91F /* InitializedLoadVC.m */; };
 		AD9AA2DF2363325E00ABC82F /* InitializedLoad.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */; };
@@ -81,6 +83,10 @@
 		AD0F6EF12382D1FA00AE92B9 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		AD0F6EF62382D68800AE92B9 /* NSObject+MyKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MyKVO.h"; sourceTree = "<group>"; };
 		AD0F6EF72382D68800AE92B9 /* NSObject+MyKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MyKVO.m"; sourceTree = "<group>"; };
+		AD2227B3238F9D7C001FB83F /* TestKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKVC.h; sourceTree = "<group>"; };
+		AD2227B4238F9D7C001FB83F /* TestKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKVC.m; sourceTree = "<group>"; };
+		AD2227B8238FD301001FB83F /* MainPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPerson.h; sourceTree = "<group>"; };
+		AD2227B9238FD301001FB83F /* MainPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPerson.m; sourceTree = "<group>"; };
 		AD50C14022D47D48009E3270 /* NSObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD50C14322D47D48009E3270 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD50C14422D47D48009E3270 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +179,15 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		AD2227B2238F9D7C001FB83F /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				AD2227B3238F9D7C001FB83F /* TestKVC.h */,
+				AD2227B4238F9D7C001FB83F /* TestKVC.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
 		AD50C13722D47D48009E3270 = {
 			isa = PBXGroup;
 			children = (
@@ -200,12 +215,15 @@
 				AD50C17C22D47E4C009E3270 /* initializeLoad */,
 				ADC406A222D9D14D002F05C0 /* Protocol */,
 				ADCA0ADB236FD2AE00DF6AE0 /* Copy */,
+				AD2227B2238F9D7C001FB83F /* KVC */,
 				AD0F6EE32382C78E00AE92B9 /* KVO */,
 				AD55FD6B238691E000684E6C /* Inline */,
 				AD50C14322D47D48009E3270 /* AppDelegate.h */,
 				AD50C14422D47D48009E3270 /* AppDelegate.m */,
 				AD5F33ED236336C400FDA91F /* MainVC.h */,
 				AD5F33EE236336C400FDA91F /* MainVC.m */,
+				AD2227B8238FD301001FB83F /* MainPerson.h */,
+				AD2227B9238FD301001FB83F /* MainPerson.m */,
 				AD50C14922D47D48009E3270 /* Main.storyboard */,
 				AD50C14C22D47D49009E3270 /* Assets.xcassets */,
 				AD50C14E22D47D49009E3270 /* LaunchScreen.storyboard */,
@@ -468,8 +486,10 @@
 				AD50C18722D47EA3009E3270 /* Child.m in Sources */,
 				ADCA0ADE236FD2D100DF6AE0 /* CopyDeepCopyVC.m in Sources */,
 				ADCA0AE3236FEC2A00DF6AE0 /* Copy_Custom.m in Sources */,
+				AD2227BA238FD301001FB83F /* MainPerson.m in Sources */,
 				ADE9B2E2236338AA00B16F2D /* ProtocolVC.m in Sources */,
 				AD0F6EF82382D68800AE92B9 /* NSObject+MyKVO.m in Sources */,
+				AD2227B5238F9D7C001FB83F /* TestKVC.m in Sources */,
 				AD0F6E7E238264EB00AE92B9 /* UIViewController+load2.m in Sources */,
 				AD50C14522D47D48009E3270 /* AppDelegate.m in Sources */,
 				AD0F6E7B238264E300AE92B9 /* UIViewController+load1.m in Sources */,

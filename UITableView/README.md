@@ -62,3 +62,7 @@
 8. > 按需加载 cell 图片
 
 	系统代码：LazyImage
+	
+9. > contentInset 和 scrollIndicatorInsets
+
+	![](https://upload-images.jianshu.io/upload_images/5294842-abb6ac12ed3fcc96.gif?imageMogr2/auto-orient/strip)

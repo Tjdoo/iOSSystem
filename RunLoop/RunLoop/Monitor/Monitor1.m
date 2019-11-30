@@ -6,12 +6,12 @@
 //  Copyright © 2019年 D. All rights reserved.
 
 
-#import "Monitor.h"
+#import "Monitor1.h"
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
 
 
-@interface Monitor ()
+@interface Monitor1 ()
 {
     CFRunLoopObserverRef _observer;  // 观察对象
     dispatch_semaphore_t _semaphore; // 信号量
@@ -22,17 +22,17 @@
 @end
 
 
-@implementation Monitor
+@implementation Monitor1
 
-static Monitor * instance;
+static Monitor1 * __instance__;
 
 + (instancetype)sharedInstance
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[self alloc] init];
+        __instance__ = [[self alloc] init];
     });
-    return instance;
+    return __instance__;
 }
 
 /**
@@ -40,7 +40,7 @@ static Monitor * instance;
   */
 static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
 {
-    Monitor * monitor = [Monitor sharedInstance];
+    Monitor1 * monitor = [Monitor1 sharedInstance];
     monitor->_activity = activity;
     dispatch_semaphore_signal(monitor->_semaphore);
 }
@@ -83,6 +83,7 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
                     if (++self->_countTime < 5) {
                         continue;
                     }
+                    NSLog(@"监测到卡顿");
                     [self storeStackInfo];
                 }
                 self->_countTime = 0;

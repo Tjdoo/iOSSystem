@@ -28,3 +28,6 @@
 		return YES;
 	}
 	```
+	
+
+[modalPresentationStyle 使用present后背景页面不隐藏](https://www.jianshu.com/p/af990d83815e)

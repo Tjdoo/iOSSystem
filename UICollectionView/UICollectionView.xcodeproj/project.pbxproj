@@ -23,6 +23,7 @@
 		AD55FA7923862AEE00684E6C /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55FA7823862AEE00684E6C /* ListVC.m */; };
 		AD55FA7C23862C9300684E6C /* BookCaseFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55FA7B23862C9300684E6C /* BookCaseFlowLayout.m */; };
 		AD55FA7F23862CD400684E6C /* DecorationReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55FA7E23862CD400684E6C /* DecorationReusableView.m */; };
+		AD97FE62238BAF1B002957EB /* TransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD97FE61238BAF1B002957EB /* TransitionVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		AD55FA7B23862C9300684E6C /* BookCaseFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookCaseFlowLayout.m; sourceTree = "<group>"; };
 		AD55FA7D23862CD400684E6C /* DecorationReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecorationReusableView.h; sourceTree = "<group>"; };
 		AD55FA7E23862CD400684E6C /* DecorationReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecorationReusableView.m; sourceTree = "<group>"; };
+		AD97FE60238BAF1B002957EB /* TransitionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionVC.h; sourceTree = "<group>"; };
+		AD97FE61238BAF1B002957EB /* TransitionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				AD271D7722C4B9E700056D85 /* AppDelegate.m */,
 				AD55FA7723862AEE00684E6C /* ListVC.h */,
 				AD55FA7823862AEE00684E6C /* ListVC.m */,
+				AD97FE60238BAF1B002957EB /* TransitionVC.h */,
+				AD97FE61238BAF1B002957EB /* TransitionVC.m */,
 				AD271D7C22C4B9E700056D85 /* Main.storyboard */,
 				AD271D7F22C4B9E800056D85 /* Assets.xcassets */,
 				AD271D8122C4B9E800056D85 /* LaunchScreen.storyboard */,
@@ -319,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD271D7B22C4B9E700056D85 /* ViewController.m in Sources */,
+				AD97FE62238BAF1B002957EB /* TransitionVC.m in Sources */,
 				AD55FA732386288900684E6C /* BookCaseCVCell.m in Sources */,
 				AD55FA7C23862C9300684E6C /* BookCaseFlowLayout.m in Sources */,
 				AD271DB322C5DD3800056D85 /* MyCell.m in Sources */,

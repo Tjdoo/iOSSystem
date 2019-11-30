@@ -23,3 +23,7 @@
 	
 	![](https://upload-images.jianshu.io/upload_images/2291135-070f531e813e962a.png?imageMogr2/auto-orient/strip|imageView2/2/w/811)
 	![](https://upload-images.jianshu.io/upload_images/2291135-840cf1c5b39bc82b.png?imageMogr2/auto-orient/strip|imageView2/2/w/805)
+	
+
+[问一个非常基础的strong weak问题。。](http://www.cocoachina.com/bbs/read.php?tid-1772885-page-1.html)
+[字符串为什么用copy修饰](https://www.jianshu.com/p/a0891fc0ce51)

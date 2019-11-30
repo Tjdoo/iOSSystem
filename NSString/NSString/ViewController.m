@@ -15,6 +15,9 @@
 @property (nonatomic, strong) NSString * sString;
 @property (nonatomic, copy) NSString * cString;
 
+@property (nonatomic, copy) NSString * s1;
+@property (nonatomic, weak) NSString * s2;
+
 @end
 
 
@@ -31,6 +34,8 @@
     [self __testNSDataAppendString];
     [self __testCluster];
     [self __testFormat];
+    [self __testNilString];
+    [self __testStringLength];
 }
 
 /**
@@ -93,6 +98,9 @@
     return [newString stringByTrimmingCharactersInSet:[cs invertedSet]];
 }
 
+/**
+  *  @brief   测试高效添加 String
+  */
 - (void)__testNSDataAppendString
 {
     NSLog(@"*********************");
@@ -142,6 +150,71 @@
 //    [mString appendString:string]; // 崩溃原因 *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFString appendString:]: nil argument'
     
     NSLog(@"%@", mString);
+}
+
+/**
+  *  @brief   测试指针设置 nil 后的现象
+ *  @discussion  【解释 1】
+             temp 字符串常量是由系统创建管理的，通常情况下存放在内存的常量区。不管有多少对象引用，它本身都不受程序的影响，直到程序结束，由系统进行回收。
+              即使 s1 设置为 nil， temp 本身只要没有出这个程序，或者函数，都不会被释放，所以 s2 仍然有值。
+ 
+             另外 s2 = s1 并不是把 s2 指向了 s1，而是 s2 指向了s1 的值。要想 s2 指向 s1 差不多是下边这个样子：
+                            NSString ** s2 = s1;    // 需要关闭 arc 才能使用二级指针
+             这样 s1 = nil 后 s2 也是 nil 了。
+ 
+    【解释 2】
+ 
+             @"AAAA"; 是个字符串常量，既然是个常量，这块内存不可修改，不可修改就谈不上所谓的释放不释放
+ 
+             self.s1 = nil; 本意是将 @"AAAA" 置为 nil ，但由于没办法修改字符串常量，那么指针只能指向 nil 地址，对原来地址所存内容无修改。
+ 
+             字符串在 c 系语言里面是个很特殊的存在，特殊到什么程度呢，它在编译阶段就已经确定了，所以运行时是没办法修改的。
+ 
+             致于为什么搞成这样，我觉得是因为 c 语言里面没有专门用来存储字符串变量的类型，不过可以退而求其次的使用数组，比如：char a[10] = "abcd" 来保存，但是这种写法既浪费空间效率又低。
+  */
+- (void)__testNilString
+{
+    NSLog(@"*********************");
+    
+    NSString * temp = @"AAAA";
+    
+    self.s1 = temp;
+    NSLog(@"temp -> %p", temp);  // temp -> 0x10313f320
+    
+    self.s2 = self.s1;
+    self.s1 = nil;
+    
+    NSLog(@"s1 = %@，s2 = %@", self.s1, self.s2);  // s1 = (null)，s2 = AAAA
+    NSLog(@"s1 -> %p，s2 -> %p", self.s1, self.s2);  // s1 -> 0x0，s2 -> 0x10313f320
+    
+    NSLog(@"retainCount = %@", [temp valueForKey:@"retainCount"]);  // retainCount = 18446744073709551615
+}
+
+/**
+  *  @brief   测试不同长度的字符串
+ *  @discussion   通过 [[NSString alloc] initWithFormat:@""] 创建的 NSString 对象存储在内存中的堆区：
+
+             如果字符串长度在 10 以下，那么如果字符串内容一致，内存中只会有一份；
+             如果字符串长度在 10 以上，那么就算字符串内容一致，内存中也会有多份。
+ 
+    1、== 是判断内存地址；
+    2、NSObject 默认的 isEqual: 底层用的是 ==，NSString 重写了，判断内容；
+    3、isEqualToString: 是判断内容
+  */
+- (void)__testStringLength
+{
+    NSLog(@"*********************");
+
+    NSString * temp1 = [[NSString alloc] initWithFormat:@"%@", @"AAAAAAA"];
+    NSString * temp2 = [[NSString alloc] initWithFormat:@"%@", @"AAAAAAA"];
+    NSString * temp3 = [[NSString alloc] initWithFormat:@"%@", @"BBBBBBBBBBBB"];
+    NSString * temp4 = [[NSString alloc] initWithFormat:@"%@", @"BBBBBBBBBBBB"];
+    
+    NSLog(@"%p   %p", temp1, temp2);  // 0xccc41fbf6e72caee   0xccc41fbf6e72caee
+    NSLog(@"%p   %p", temp3, temp4);  // 0x6000032a4820   0x6000032a4840
+    
+    NSLog(@"%d   %d   %d", temp1 == temp2, [temp1 isEqual:temp2], [temp1 isEqualToString:temp2]);
+    NSLog(@"%d   %d   %d", temp3 == temp4, [temp3 isEqual:temp4], [temp3 isEqualToString:temp4]);
 }
 
 @end

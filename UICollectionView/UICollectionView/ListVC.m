@@ -24,7 +24,8 @@
     self.tableView.tableFooterView = [UIView new];
     
     self.datas = @[ @{ @"title" : @"1. 吸顶", @"vcSBID" : @"ViewController_SBID" },
-                    @{ @"title" : @"2. 书柜", @"vcSBID" : @"BookCaseVC_SBID" } ];
+                    @{ @"title" : @"2. 书柜", @"vcSBID" : @"BookCaseVC_SBID" },
+                    @{ @"title" : @"3. 系统转场", @"vcSBID" : @"TransitionVC_SBID"} ];
 }
 
 

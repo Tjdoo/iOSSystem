@@ -7,7 +7,8 @@
 
 
 #import "ViewController.h"
-#import "Monitor.h"
+#import "Monitor1.h"
+#import "Monitor2.h"
 
 
 @interface ViewController ()
@@ -22,7 +23,8 @@
     [super viewDidLoad];
     
     // 开启监控
-    [[Monitor sharedInstance] startMonitor];
+//    [[Monitor1 sharedInstance] startMonitor];
+    [[Monitor2 sharedInstance] startMonitor];
 }
 
 - (IBAction)forEvent:(UIButton *)sender
@@ -34,12 +36,14 @@
 
 - (IBAction)logMonitorStack:(id)sender
 {
-    [[Monitor sharedInstance] logStackInfo];
+//    [[Monitor1 sharedInstance] logStackInfo];
+    [[Monitor2 sharedInstance] logStackInfo];
 }
 
 - (IBAction)stopMonitor:(id)sender
 {
-    [[Monitor sharedInstance] endMonitor];  // TODO
+//    [[Monitor1 sharedInstance] endMonitor];  // TODO
+    [[Monitor2 sharedInstance] endMonitor];
 }
 
 @end
