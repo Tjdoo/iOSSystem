@@ -38,6 +38,8 @@
 		AD5F33EF236336C400FDA91F /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33EE236336C400FDA91F /* MainVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD5F33F2236337EE00FDA91F /* SingletonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33F1236337EE00FDA91F /* SingletonVC.m */; };
 		AD5F33F52363381700FDA91F /* InitializedLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5F33F42363381700FDA91F /* InitializedLoadVC.m */; };
+		AD7CCF452394E9E400742777 /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CCF442394E9E400742777 /* Memory.m */; };
+		AD7CCF492395625E00742777 /* Pointer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CCF482395625E00742777 /* Pointer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD9AA2DF2363325E00ABC82F /* InitializedLoad.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */; };
 		ADBFB3542384372900557E0F /* WeakSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFB3532384372900557E0F /* WeakSingleton.m */; };
 		ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC406A422D9D196002F05C0 /* ProtocolCls.m */; };
@@ -125,6 +127,10 @@
 		AD5F33F1236337EE00FDA91F /* SingletonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonVC.m; sourceTree = "<group>"; };
 		AD5F33F32363381700FDA91F /* InitializedLoadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitializedLoadVC.h; sourceTree = "<group>"; };
 		AD5F33F42363381700FDA91F /* InitializedLoadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitializedLoadVC.m; sourceTree = "<group>"; };
+		AD7CCF432394E9E400742777 /* Memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		AD7CCF442394E9E400742777 /* Memory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
+		AD7CCF472395625E00742777 /* Pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pointer.h; sourceTree = "<group>"; };
+		AD7CCF482395625E00742777 /* Pointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pointer.m; sourceTree = "<group>"; };
 		AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InitializedLoad.md; sourceTree = "<group>"; };
 		ADBFB3522384372900557E0F /* WeakSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakSingleton.h; sourceTree = "<group>"; };
 		ADBFB3532384372900557E0F /* WeakSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakSingleton.m; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 				AD2227B2238F9D7C001FB83F /* KVC */,
 				AD0F6EE32382C78E00AE92B9 /* KVO */,
 				AD55FD6B238691E000684E6C /* Inline */,
+				AD7CCF422394E9D900742777 /* Memory */,
+				AD7CCF462395625700742777 /* Pointer */,
 				AD50C14322D47D48009E3270 /* AppDelegate.h */,
 				AD50C14422D47D48009E3270 /* AppDelegate.m */,
 				AD5F33ED236336C400FDA91F /* MainVC.h */,
@@ -305,6 +313,24 @@
 				AD55FF7A2386B24200684E6C /* Static.m */,
 			);
 			path = Inline;
+			sourceTree = "<group>";
+		};
+		AD7CCF422394E9D900742777 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				AD7CCF432394E9E400742777 /* Memory.h */,
+				AD7CCF442394E9E400742777 /* Memory.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		AD7CCF462395625700742777 /* Pointer */ = {
+			isa = PBXGroup;
+			children = (
+				AD7CCF472395625E00742777 /* Pointer.h */,
+				AD7CCF482395625E00742777 /* Pointer.m */,
+			);
+			path = Pointer;
 			sourceTree = "<group>";
 		};
 		ADC406A222D9D14D002F05C0 /* Protocol */ = {
@@ -471,6 +497,7 @@
 				AD50C17B22D47D8F009E3270 /* Singleton1.m in Sources */,
 				AD0F6EE92382C7A900AE92B9 /* KVO_Person.m in Sources */,
 				AD0F6E78238264B900AE92B9 /* UIViewController+initializ2.m in Sources */,
+				AD7CCF492395625E00742777 /* Pointer.m in Sources */,
 				AD50C18522D47EA3009E3270 /* Child+Category.m in Sources */,
 				AD5F33EF236336C400FDA91F /* MainVC.m in Sources */,
 				AD0F6EE62382C79E00AE92B9 /* KVO.m in Sources */,
@@ -492,6 +519,7 @@
 				AD2227B5238F9D7C001FB83F /* TestKVC.m in Sources */,
 				AD0F6E7E238264EB00AE92B9 /* UIViewController+load2.m in Sources */,
 				AD50C14522D47D48009E3270 /* AppDelegate.m in Sources */,
+				AD7CCF452394E9E400742777 /* Memory.m in Sources */,
 				AD0F6E7B238264E300AE92B9 /* UIViewController+load1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +692,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = NSObject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -682,6 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = NSObject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

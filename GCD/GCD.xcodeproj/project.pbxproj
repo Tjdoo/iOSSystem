@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD7A1E1D239743230070FD4E /* Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A1E1C239743230070FD4E /* Lock.m */; };
 		ADB20C7522BDF17C003EB727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB20C7422BDF17C003EB727 /* AppDelegate.m */; };
 		ADB20C7822BDF17C003EB727 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB20C7722BDF17C003EB727 /* ViewController.m */; };
 		ADB20C7B22BDF17C003EB727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB20C7922BDF17C003EB727 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD7A1E1B239743230070FD4E /* Lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lock.h; sourceTree = "<group>"; };
+		AD7A1E1C239743230070FD4E /* Lock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lock.m; sourceTree = "<group>"; };
 		ADB20C7022BDF17C003EB727 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB20C7322BDF17C003EB727 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADB20C7422BDF17C003EB727 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				ADB20C7422BDF17C003EB727 /* AppDelegate.m */,
 				ADB20C7622BDF17C003EB727 /* ViewController.h */,
 				ADB20C7722BDF17C003EB727 /* ViewController.m */,
+				AD7A1E1B239743230070FD4E /* Lock.h */,
+				AD7A1E1C239743230070FD4E /* Lock.m */,
 				ADB20C7922BDF17C003EB727 /* Main.storyboard */,
 				ADB20C7C22BDF17D003EB727 /* Assets.xcassets */,
 				ADB20C7E22BDF17D003EB727 /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				ADB20C7822BDF17C003EB727 /* ViewController.m in Sources */,
 				ADB20C8322BDF17D003EB727 /* main.m in Sources */,
+				AD7A1E1D239743230070FD4E /* Lock.m in Sources */,
 				ADB20C7522BDF17C003EB727 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

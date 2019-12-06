@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainPerson : NSObject
 {
+    @public
     NSString * _name;
     int _age;
 }
