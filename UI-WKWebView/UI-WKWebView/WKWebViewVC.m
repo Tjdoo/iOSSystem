@@ -10,8 +10,33 @@
 #import <WebKit/WebKit.h>
 
 
-@interface WKWebViewVC () <WKNavigationDelegate, WKUIDelegate>
+/**
+  *  @brief   处理循环引用
+  */
+@interface WeakProxy : NSProxy
 
+@property (nonatomic, weak) id target;
+
+- (instancetype)initWithTarget:(id)target;
+
+@end
+
+@implementation WeakProxy
+
+- (instancetype)initWithTarget:(id)target
+{
+    WeakProxy * wp = [WeakProxy alloc];
+    wp.target = target;
+    return wp;
+}
+
+@end
+
+
+
+@interface WKWebViewVC () <WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler>
+
+@property (nonatomic, strong) WeakProxy * weakProxy;
 @property (nonatomic, weak) WKWebView * wkWebView;
 
 @end
@@ -19,26 +44,65 @@
 
 @implementation WKWebViewVC
 
+- (void)dealloc
+{
+    [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"wkWebViewCallCamera"];
+    [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"wkWebViewCallShare"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    self.weakProxy = [[WeakProxy alloc] initWithTarget:self];
+    
+    // 这个类主要用来做 native 与 JavaScript 的交互管理
     WKUserContentController * ucc = [[WKUserContentController alloc] init];
+    // 注册一个 name 为 wkWebViewCallCamera 的 js 方法，设置处理接收 JS 方法的代理
+    [ucc addScriptMessageHandler:_weakProxy.target name:@"wkWebViewCallCamera"];
+    [ucc addScriptMessageHandler:_weakProxy.target name:@"wkWebViewCallShare"];
+    
+    // 创建设置对象
+    WKPreferences *preference = [[WKPreferences alloc]init];
+    // 最小字体大小。当将 javaScriptEnabled 属性设置为 NO 时，可以看到明显的效果
+    preference.minimumFontSize = 0;
+    // 设置是否支持 javaScript  默认是支持的
+    preference.javaScriptEnabled = YES;
+    // 在 iOS 上默认为 NO，表示是否允许不经过用户交互由 javaScript 自动打开窗口
+    preference.javaScriptCanOpenWindowsAutomatically = YES;
+    
+    // 网页配置对象
     WKWebViewConfiguration * config = [[WKWebViewConfiguration alloc] init];
     config.userContentController = ucc;
+    config.preferences = preference;
     if (@available(iOS 9.0, *)) {
-        config.allowsInlineMediaPlayback = NO;  // no - 网页中内嵌的视频就无法正常播放。（没效果？？）
+        config.allowsInlineMediaPlayback = NO;  // 使用 h5 的视频播放器在线播放，还是使用原生播放器全屏播放
+        config.applicationNameForUserAgent = @"ChinaDailyForiPad"; // 设置请求的 User-Agent 信息中应用程序名称
+        config.requiresUserActionForMediaPlayback = YES; // 设置视频是否需要用户手动播放。设置为 NO 则会允许自动播放
+        config.allowsPictureInPictureMediaPlayback = YES;  // 设置是否允许画中画技术，在特定设备上有效
     }
     
     WKWebView * wkWebView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
+    // 导航代理
     wkWebView.navigationDelegate = self;
+    // UI 代理
     wkWebView.UIDelegate = self;
     wkWebView.opaque = YES;
     wkWebView.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
     wkWebView.scrollView.backgroundColor = UIColor.whiteColor;
+    // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
     wkWebView.allowsBackForwardNavigationGestures = NO;  // 不支持右滑返回手势
     [self.view addSubview:wkWebView];
     self.wkWebView = wkWebView;
+    
+    // 可返回的页面列表，存储已打开过的网页
+//    WKBackForwardList * backForwardList = [wkWebView backForwardList];
+    // 页面后退
+//    [wkWebView goBack];
+    // 页面前进
+//    [wkWebView goForward];
+    // 刷新当前页面
+//    [wkWebView reload];
     
     [self __userAgent];
     
@@ -49,7 +113,8 @@
                    context:nil];
 
     [self __loadRequest];
-    [self __addExtraView];
+//    [self __addExtraView];
+    [self __insertJS];
 }
 
 - (void)__userAgent
@@ -72,14 +137,19 @@
 - (void)__loadRequest
 {
     // 远程地址
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
+//    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     // 本地文件
 //    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
 //    NSString * appHtml = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
 //    NSURL * baseURL = [NSURL fileURLWithPath:filePath];
 //    [self.wkWebView loadHTMLString:appHtml baseURL:baseURL];
+    
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
 }
 
+/**
+  *  @brief   添加额外的区域
+  */
 - (void)__addExtraView
 {
     CGFloat height = 100;
@@ -102,6 +172,20 @@
                      ", @(height), @(self.wkWebView.scrollView.contentSize.width), @(height)];
     
     [self.wkWebView evaluateJavaScript:js completionHandler:nil];
+}
+
+/**
+  *  @brief   注入 js
+  */
+- (void)__insertJS
+{
+    // 以下代码适配文本大小，由 UIWebView 换为 WKWebView 后，会发现字体小了很多，这应该是 WKWebView 与 html 的兼容问题，解决办法是修改原网页，要么我们手动注入  JS
+    NSString *jSString = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+    // 用于进行  JavaScript 注入
+    WKUserScript * wkUScript = [[WKUserScript alloc] initWithSource:jSString
+                                                      injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+                                                   forMainFrameOnly:YES];
+    [self.wkWebView.configuration.userContentController addUserScript:wkUScript];
 }
 
 
@@ -175,10 +259,32 @@
 }
 
 
+#pragma mark - WKScriptMessageHandler
+/**
+  *  @brief   处理监听 JavaScript 方法，从而调用原生 OC 方法，和 WKUserContentController 搭配使用。
+  */
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+{
+    //用 message.body 获得 JS 传出的参数体
+    NSLog(@"param = %@", message.body);
+    
+    if ([message.name isEqualToString:@"wkWebViewCallShare"]) {
+        NSLog(@"分享");
+    }
+    else if ([message.name isEqualToString:@"wkWebViewCallCamera"]) {
+        NSLog(@"照相机");
+    }
+}
+
+
 #pragma mark - WKUIDelegate
 /**
-  *  @brief   Alert
-  */
+ *  @brief   web界面中有弹出警告框时调用
+ *
+ *  @param   webView   实现该代理的webview
+ *  @param   message  警告框中的内容
+ *  @param   completionHandler   警告框消失调用
+ */
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
 {
     UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:nil

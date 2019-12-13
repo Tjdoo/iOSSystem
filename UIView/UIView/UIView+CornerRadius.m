@@ -66,4 +66,36 @@ CGPathRef CYPathCreateWithRoundedRect(CGRect bounds, CYCornerInsets cornerRadius
     return path;
 }
 
+- (void)drawRectWithRoundedCornerRadius:(CYCornerInsets)cornerRadius
+                                 borderWidth:(CGFloat)borderWidth
+                             backgroundColor:(UIColor *)backgroundColor
+                                borderCorlor:(UIColor *)borderColor
+{
+//    CGFloat halfBorderWidth = borderWidth / 2.0;
+    CGFloat width = self.bounds.size.width, height = self.bounds.size.height;
+    
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, borderWidth);
+    CGContextSetStrokeColorWithColor(context, borderColor.CGColor);
+    CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
+    // 左上角
+    CGContextMoveToPoint(context, 0, cornerRadius.topLeft);
+    CGContextAddArcToPoint(context, 0, 0, cornerRadius.topLeft, 0, cornerRadius.topLeft);
+    // 右上角
+    CGContextAddArcToPoint(context, width, 0, width, cornerRadius.topRight, cornerRadius.topRight);
+    // 右下角
+    CGContextAddArcToPoint(context, width, height, width - cornerRadius.bottomRight, height, cornerRadius.bottomRight);
+    // 左下角
+    CGContextAddArcToPoint(context, 0, height, 0, 0, cornerRadius.bottomLeft);
+    CGContextClosePath(context);
+    
+    CGContextDrawPath(context, kCGPathFillStroke);
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+  
+    self.layer.contents = (id)image.CGImage;
+}
+
 @end

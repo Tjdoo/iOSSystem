@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div style="margin-top: 100px">
+            <h1>WKWebView 的按钮</h1>
+            <!--    WKWebView 的按钮   -->
+            <input type="button" value="WKWebView - CallCamera" onclick="window.webkit.messageHandlers.wkWebViewCallCamera.postMessage()">
+            <input type="button" value="WKWebView - CallShare" onclick="wkWebViewCallShare()">
+        </div>
+        
+
+        <div>
+            <h1>UIWebView 的按钮</h1>
+            <!--    UIWebView 的按钮   -->
+            <input type="button" value="UIWebView - CallCamera" onclick="Objc.uiWebViewCallCamera()">
+            <input type="button" value="UIWebView - CallShare" onclick="uiWebViewCallShare()">
+        </div>
+        
+        <!--    WKWebView 的方法   -->
+        <script>
+            var wkWebViewCallShare = function() {
+                window.webkit.messageHandlers.wkWebViewCallShare.postMessage("");
+            }
+        
+            ///  UIWebView 的方法
+            var uiWebViewCallShare = function() {
+                Objc.uiWebViewCallShare("");
+            }
+    
+            var picCallback = function(photos) {
+                alert(photos);
+            }
+        
+            var shareCallback = function(){
+                alert('success');
+            }
+        </script>
+    </body>
+</html>

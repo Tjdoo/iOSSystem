@@ -32,4 +32,9 @@ CG_INLINE CYCornerInsets CYCornerInsetsMake(CGFloat topLeft,
 
 - (void)addCornerRadius:(CYCornerInsets)cornerInsets;
 
+- (void)drawRectWithRoundedCornerRadius:(CYCornerInsets)cornerRadius
+                            borderWidth:(CGFloat)borderWidth
+                        backgroundColor:(UIColor *)backgroundColor
+                           borderCorlor:(UIColor *)borderColor;
+
 @end

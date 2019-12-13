@@ -580,7 +580,7 @@ static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
 /*  开辟 block 需要的数据。__main_block_desc_0_DATA 是一个 __main_block_desc_0 的实例。*/
 static struct __main_block_desc_0 {
   size_t reserved;   // Block 版本升级所需的预留区空间，在这里为 0
-  size_t Block_size;
+  size_t Block_size;  // block 占的大小
 } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0)};
 
 

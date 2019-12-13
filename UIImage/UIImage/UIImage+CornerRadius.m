@@ -24,15 +24,11 @@
     CGContextMoveToPoint(context, 0, radius);
     CGContextAddArcToPoint(context, 0, 0, radius, 0, radius);
     // 右上角
-    CGContextAddLineToPoint(context, w-radius, 0);
     CGContextAddArcToPoint(context, w, 0, w, radius, radius);
     // 右下角
-    CGContextAddLineToPoint(context, w, h-radius);
     CGContextAddArcToPoint(context, w, h, w-radius, h, radius);
     // 左下角
-    CGContextAddLineToPoint(context, radius, h);
     CGContextAddArcToPoint(context, 0, h, 0, h-radius, radius);
-    CGContextAddLineToPoint(context, 0, radius);
     CGContextClosePath(context);
     
     CGContextClip(context); // 先裁剪 context，再画图，就会在裁剪后的 path 中画
@@ -61,6 +57,28 @@
     UIGraphicsEndImageContext();
     
     return ret;
+}
+
+- (UIImage *)imageAddCornerWithRadius:(CGFloat)radius andSize:(CGSize)size
+{
+    CGFloat w = self.size.width  * self.scale;
+    CGFloat h = self.size.height * self.scale;
+    CGRect rect = CGRectMake(0, 0, w, h);
+
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 1.0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                byRoundingCorners:UIRectCornerAllCorners
+                                                      cornerRadii:CGSizeMake(radius, radius)];
+    CGContextAddPath(ctx, path.CGPath);
+    CGContextClip(ctx);
+    
+    [self drawInRect:rect];
+    CGContextDrawPath(ctx, kCGPathFillStroke);
+    UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 

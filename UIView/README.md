@@ -4,8 +4,12 @@
 
 2. 处理四个角不同的 cornerRadius
 	
-	方式 ①：CAShapeLayer + UIBezierpath 自带的指定圆角位置
-	方式 ②：CAShapeLayer + 自定义的 CGPath
+	* CAShapeLayer + UIBezierpath 自带的指定圆角位置
+	* CAShapeLayer + 自定义的 CGPath
+
+	上面两种实质是一样的，且都会触发离屏渲染。
+	
+	* Coregraphics 绘制出图片，设置为 UIView.layer.contents，不会触发离屏渲染。
 
 3. UIView 的上下文绘制圆形 + CGContextBeginTransparencyLayer 透明层添加阴影
 

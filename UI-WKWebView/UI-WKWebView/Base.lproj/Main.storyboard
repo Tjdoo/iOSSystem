@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-684" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--主界面-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="主界面" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0CR-w7-EUt"/>
                         <viewControllerLayoutGuide type="bottom" id="O5Z-MF-pDf"/>
@@ -56,11 +56,32 @@
                                     <segue destination="1zf-kR-Agp" kind="show" id="fPH-Xp-YYG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-nO-yWj">
+                                <rect key="frame" x="127.5" y="264" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.74901960779999999" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hFQ-ss-jIH"/>
+                                    <constraint firstAttribute="width" constant="120" id="q3J-Ja-R3J"/>
+                                </constraints>
+                                <state key="normal" title="UIWebview">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tfq-2r-TsS" kind="show" id="nfW-MN-6P5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Tdb-nO-yWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLe-Rt-kuU"/>
                             <constraint firstItem="Nax-ng-yZM" firstAttribute="top" secondItem="0CR-w7-EUt" secondAttribute="bottom" constant="100" id="cRv-pe-3ze"/>
                             <constraint firstItem="Nax-ng-yZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFo-kg-Gyi"/>
+                            <constraint firstItem="Tdb-nO-yWj" firstAttribute="top" secondItem="Nax-ng-yZM" secondAttribute="bottom" constant="50" id="toE-He-Tra"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iBH-Q8-LZ8"/>
@@ -68,6 +89,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="62" y="50"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="t0R-KX-35V">
+            <objects>
+                <viewController id="tfq-2r-TsS" customClass="UIWebViewVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EFR-vV-3wK"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDV-uD-CNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q0i-8Y-XgM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LeZ-lv-SHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="790"/>
         </scene>
         <!--Web ViewVC-->
         <scene sceneID="Hcc-o6-bwF">

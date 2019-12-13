@@ -18,6 +18,8 @@
 		ADC8428A22D35CC700FD30D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC8428922D35CC700FD30D6 /* main.m */; };
 		ADC8429422D35CC700FD30D6 /* UI_WKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC8429322D35CC700FD30D6 /* UI_WKWebViewTests.m */; };
 		ADC8429F22D35CC700FD30D6 /* UI_WKWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC8429E22D35CC700FD30D6 /* UI_WKWebViewUITests.m */; };
+		ADD0132023A252E400EE4223 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = ADD0131F23A252E400EE4223 /* test.html */; };
+		ADD0132323A2559E00EE4223 /* UIWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD0132223A2559E00EE4223 /* UIWebViewVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		ADC8429A22D35CC700FD30D6 /* UI-WKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-WKWebViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC8429E22D35CC700FD30D6 /* UI_WKWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_WKWebViewUITests.m; sourceTree = "<group>"; };
 		ADC842A022D35CC700FD30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD0131F23A252E400EE4223 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		ADD0132123A2559E00EE4223 /* UIWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewVC.h; sourceTree = "<group>"; };
+		ADD0132223A2559E00EE4223 /* UIWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +120,10 @@
 				ADC8427E22D35CC500FD30D6 /* ViewController.m */,
 				AD1335522387B10B00E9C2A0 /* WKWebViewVC.h */,
 				AD1335532387B10B00E9C2A0 /* WKWebViewVC.m */,
+				ADD0132123A2559E00EE4223 /* UIWebViewVC.h */,
+				ADD0132223A2559E00EE4223 /* UIWebViewVC.m */,
 				AD1335552387BA8000E9C2A0 /* ExampleApp.html */,
+				ADD0131F23A252E400EE4223 /* test.html */,
 				ADC8428022D35CC500FD30D6 /* Main.storyboard */,
 				ADC8428322D35CC700FD30D6 /* Assets.xcassets */,
 				ADC8428522D35CC700FD30D6 /* LaunchScreen.storyboard */,
@@ -248,6 +256,7 @@
 			files = (
 				ADC8428722D35CC700FD30D6 /* LaunchScreen.storyboard in Resources */,
 				ADC8428422D35CC700FD30D6 /* Assets.xcassets in Resources */,
+				ADD0132023A252E400EE4223 /* test.html in Resources */,
 				AD1335582387C1BA00E9C2A0 /* README.md in Resources */,
 				ADC8428222D35CC500FD30D6 /* Main.storyboard in Resources */,
 				AD1335562387BA8000E9C2A0 /* ExampleApp.html in Resources */,
@@ -279,6 +288,7 @@
 				ADC8427F22D35CC500FD30D6 /* ViewController.m in Sources */,
 				ADC8428A22D35CC700FD30D6 /* main.m in Sources */,
 				ADC8427C22D35CC500FD30D6 /* AppDelegate.m in Sources */,
+				ADD0132323A2559E00EE4223 /* UIWebViewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
