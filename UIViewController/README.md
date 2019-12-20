@@ -10,6 +10,7 @@
 3. > UIStatusBar 
 
 	[iOS-UIStatusBar详细总结](https://www.jianshu.com/p/be6bde3a821d)
+	[iOS 状态栏的隐藏和显示](https://www.jianshu.com/p/4b2aa09bee06)
 	
 4. > safeArea
 

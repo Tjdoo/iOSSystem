@@ -16,6 +16,7 @@
 		AD9EBCCD22CD961F00FD366A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EBCCC22CD961F00FD366A /* main.m */; };
 		AD9EBCD722CD961F00FD366A /* UIScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EBCD622CD961F00FD366A /* UIScrollViewTests.m */; };
 		AD9EBCE222CD961F00FD366A /* UIScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EBCE122CD961F00FD366A /* UIScrollViewUITests.m */; };
+		ADCDDABA23AB7351003E6FE2 /* GestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCDDAB923AB7351003E6FE2 /* GestureScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		AD9EBCDD22CD961F00FD366A /* UIScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9EBCE122CD961F00FD366A /* UIScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewUITests.m; sourceTree = "<group>"; };
 		AD9EBCE322CD961F00FD366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCDDAB823AB7351003E6FE2 /* GestureScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureScrollView.h; sourceTree = "<group>"; };
+		ADCDDAB923AB7351003E6FE2 /* GestureScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				AD9EBCBE22CD961D00FD366A /* AppDelegate.m */,
 				AD9EBCC022CD961D00FD366A /* ViewController.h */,
 				AD9EBCC122CD961D00FD366A /* ViewController.m */,
+				ADCDDAB823AB7351003E6FE2 /* GestureScrollView.h */,
+				ADCDDAB923AB7351003E6FE2 /* GestureScrollView.m */,
 				AD9EBCC322CD961D00FD366A /* Main.storyboard */,
 				AD9EBCC622CD961F00FD366A /* Assets.xcassets */,
 				AD9EBCC822CD961F00FD366A /* LaunchScreen.storyboard */,
@@ -269,6 +274,7 @@
 				AD9EBCC222CD961D00FD366A /* ViewController.m in Sources */,
 				AD9EBCCD22CD961F00FD366A /* main.m in Sources */,
 				AD9EBCBF22CD961D00FD366A /* AppDelegate.m in Sources */,
+				ADCDDABA23AB7351003E6FE2 /* GestureScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

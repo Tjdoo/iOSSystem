@@ -40,3 +40,5 @@
 	[鬼魅的“64边距”——translucent属性](https://www.jianshu.com/p/930643270455)
 	
 4. > [iOS 更改导航栏背景颜色&透明度](https://www.jianshu.com/p/a08f6c727a43)
+
+5. > [iOS 状态栏的隐藏和显示](https://www.jianshu.com/p/4b2aa09bee06)

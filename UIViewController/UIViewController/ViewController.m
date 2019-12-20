@@ -58,17 +58,17 @@
     label.backgroundColor = [UIColor orangeColor];
     // 导致系统返回按钮被“覆盖”，侧滑返回手势失效
     // 方式 ①：RootNav 中处理手势的响应
-    nextVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:label];
+//    nextVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:label];
 //    nextVC.navigationItem.leftBarButtonItems = nil;
 //    nextVC.navigationItem.hidesBackButton = YES;
     // 是否同时显示返回按钮
 //    nextVC.navigationItem.leftItemsSupplementBackButton = YES;
     
     // 方式 ②：修改系统的返回按钮样式，并保留了右滑返回手势
-//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Custom Back"
-//                                                                          style:UIBarButtonItemStylePlain
-//                                                                            target:self
-//                                                                            action:@selector(pop)];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Custom Back"
+                                                                          style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(pop)];
     [self.navigationController pushViewController:nextVC animated:YES];
 }
 
