@@ -44,7 +44,7 @@
 //    Memory * m = [[Memory alloc] init];
 //    [m demo1];
 
-    [self test2];
+//    [self test2];
 }
 
 - (void)test1
@@ -59,6 +59,7 @@
 
 - (void)test2
 {
+    // 会崩溃
     dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
     for (int i = 0; i < 1000; i++) {
         dispatch_async(queue, ^{

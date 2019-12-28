@@ -26,6 +26,12 @@
 //    [self __testLoadImage];
     [self __testBlendMode];
 //    [self __testImageIO];
+    
+    // 支持的图片格式
+    CFArrayRef mySourceTypes = CGImageSourceCopyTypeIdentifiers();
+    CFShow(mySourceTypes);
+    CFArrayRef myDestinationTypes = CGImageDestinationCopyTypeIdentifiers();
+    CFShow(myDestinationTypes);
 }
 
 /**

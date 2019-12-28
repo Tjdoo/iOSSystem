@@ -2,6 +2,12 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
+        <style>
+            input {
+                width: 150px;
+                height: 35px;
+            }
+        </style>
     </head>
     <body>
         <div style="margin-top: 100px">
@@ -12,12 +18,14 @@
         </div>
         
 
-        <div>
+        <div style="margin-top: 100px">
             <h1>UIWebView 的按钮</h1>
             <!--    UIWebView 的按钮   -->
             <input type="button" value="UIWebView - CallCamera" onclick="Objc.uiWebViewCallCamera()">
             <input type="button" value="UIWebView - CallShare" onclick="uiWebViewCallShare()">
         </div>
+        
+        <img src="image.jpg" alt="" style="margin-top:50px; width: 200px; height:200px">
         
         <!--    WKWebView 的方法   -->
         <script>

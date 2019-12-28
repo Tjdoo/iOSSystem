@@ -137,14 +137,19 @@
 - (void)__loadRequest
 {
     // 远程地址
-//    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     // 本地文件
 //    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
 //    NSString * appHtml = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
 //    NSURL * baseURL = [NSURL fileURLWithPath:filePath];
 //    [self.wkWebView loadHTMLString:appHtml baseURL:baseURL];
     
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
+//    NSURL * url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]];
+//    // 仅仅可以保证 html 文件每次从服务器中获取，不从缓存文件中拿，而对于外联 CSS、JS、图片等文件仍旧是从缓存中获取的
+//    NSURLRequest * request = [NSURLRequest requestWithURL:url
+//                                              cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+//                                          timeoutInterval:20];
+//    [self.wkWebView loadRequest:request];
 }
 
 /**
