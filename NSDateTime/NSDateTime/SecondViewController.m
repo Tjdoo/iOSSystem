@@ -8,11 +8,14 @@
 
 #import "SecondViewController.h"
 #import "WeakProxy.h"
+#import <objc/runtime.h>
+#import "NSTimer+Brex.h"
 
 @interface SecondViewController ()
 
 @property (nonatomic, strong) NSTimer * timer;
 @property (nonatomic, strong) WeakProxy * weakProxy;  // 解决循环引用
+@property (nonatomic, strong) NSObject * objc;  // 解决循环引用
 
 @end
 
@@ -22,6 +25,10 @@
 - (void)dealloc
 {
     NSLog(@"%s", __func__);
+    
+    [self.timer invalidate];
+    self.timer = nil;
+    self.objc = nil;
 }
 
 - (void)viewDidLoad
@@ -49,14 +56,32 @@
 //                                             repeats:YES];
     
     // ③、解决循环引用
-    _weakProxy = [WeakProxy alloc];
-    _weakProxy.target = self;
+//    _weakProxy = [WeakProxy alloc];
+//    _weakProxy.target = self;
+//
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+//                                              target:_weakProxy
+//                                            selector:@selector(__timerFire)
+//                                            userInfo:nil
+//                                             repeats:YES];
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                              target:_weakProxy
-                                            selector:@selector(__timerFire)
-                                            userInfo:nil
-                                             repeats:YES];
+    // ④、解决循环引用
+//    self.objc = [[NSObject alloc] init];
+//    class_addMethod([self.objc class],
+//                    @selector(__timerFire),
+//                    class_getMethodImplementation(self.class, @selector(__timerFire)),
+//                    "v@:");
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+//                                              target:self.objc
+//                                            selector:@selector(__timerFire)
+//                                            userInfo:nil
+//                                             repeats:YES];
+    
+    // ⑤、解决循环引用
+    [NSTimer brexScheduledTimerWithTimeInterval:1.0
+                                         target:self
+                                       selector:@selector(__timerFire)
+                                       userInfo:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

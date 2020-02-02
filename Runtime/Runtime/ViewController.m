@@ -12,6 +12,7 @@
 #import "MsgObject.h"
 #import "Model.h"
 #import "KVO.h"
+#import <objc/runtime.h>
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -68,6 +69,24 @@
     KVO * kvo = [[KVO alloc] init];
     [kvo cs_addObserver:self forKeyPath:@"time" options:NSKeyValueObservingOptionNew context:NULL];
     kvo.time = @"2019-06-20";
+    
+    // HOOk
+    Person * pp = [[Person alloc] init];
+    Method methodP = class_getInstanceMethod(Person.class, @selector(test));
+    Method methodVC = class_getInstanceMethod(self.class, @selector(hook_test));
+    method_exchangeImplementations(methodP, methodVC);
+    [pp test];
+}
+
+- (void)hook_test
+{
+    [self hook_test];  // [Person hook_test]: unrecognized selector sent to instance 0x600000df4360'
+    
+    // 此时的 self 是 pp，Person 类中并没有名为 hook_test 的方法
+    // 解决方法 ①：addMethod
+    // 解决方法 ②：method_setImplementation()
+    
+    NSLog(@"%@ test", self);
 }
 
 

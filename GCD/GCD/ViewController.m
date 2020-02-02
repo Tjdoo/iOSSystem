@@ -32,6 +32,7 @@
 //    [self demo3];
 //    [self demo4];
 //    [self demo5];
+    [self demo6];
     
     [[Lock alloc] test];
 }
@@ -61,7 +62,7 @@
 }
 
 
-#pragma mark -
+#pragma mark -  GCD 对于读写操作的控制
 /**
   *  @brief   GCD 对于读写操作的控制
   */
@@ -176,7 +177,7 @@
 }
 
 
-#pragma mark -
+#pragma mark - 验证线程与队列的关系
 /**
   *  @brief   验证线程与队列的关系
   */
@@ -290,6 +291,46 @@
     
     // 要用强引用将 timer 保持住
     self.timer = timer;
+}
+
+
+#pragma mark - 死锁
+
+- (void)demo6
+{
+    dispatch_queue_t queue = dispatch_queue_create("queue", NULL);
+    
+    NSLog(@"1");
+    dispatch_async(queue, ^{
+        NSLog(@"2");
+        
+        dispatch_sync(queue, ^{
+            NSLog(@"3");
+        });
+        NSLog(@"4");
+    });
+    NSLog(@"5");
+}
+
+
+#pragma mark - 美团面试题
+
+- (void)demo7
+{
+    __block int a = 0;
+    while (a < 5) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSLog(@"%@---%d", [NSThread currentThread], a);
+            a++;
+        });
+    }
+    
+//    NSLog(@"输出：%d", a);
+    
+    // FIFO  保证输出最后的结果。根据队列的调度，这里的 block 一定是最后被线程执行的
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"输出：%d", a);
+    });
 }
 
 @end

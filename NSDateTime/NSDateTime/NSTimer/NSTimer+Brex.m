@@ -8,15 +8,20 @@
 
 #import "NSTimer+Brex.h"
 #import "BrexTimerTarget.h"
+#import <objc/runtime.h>
 
 
 @implementation NSTimer (Brex)
 
-+ (instancetype)brexScheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo
++ (instancetype)brexScheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(NSObject *)aTarget selector:(SEL)aSelector userInfo:(id)userInfo
 {
     BrexTimerTarget * timerTarget = [[BrexTimerTarget alloc] init];
     timerTarget.target   = aTarget;
     timerTarget.selector = aSelector;
+    class_addMethod(timerTarget.class,
+                    @selector(brexTimerTargetAction:),
+                    class_getMethodImplementation(aTarget.class, aSelector),
+                    "v@:");
     
     NSTimer * timer = [NSTimer timerWithTimeInterval:ti
                                               target:timerTarget

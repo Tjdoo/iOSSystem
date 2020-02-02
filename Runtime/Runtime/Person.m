@@ -10,4 +10,9 @@
 
 @implementation Person
 
+- (void)test
+{
+    NSLog(@"Person Test");
+}
+
 @end
