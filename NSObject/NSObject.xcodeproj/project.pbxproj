@@ -43,6 +43,7 @@
 		AD9AA2DF2363325E00ABC82F /* InitializedLoad.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9AA2DE2363325E00ABC82F /* InitializedLoad.md */; };
 		ADBFB3542384372900557E0F /* WeakSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFB3532384372900557E0F /* WeakSingleton.m */; };
 		ADC406A522D9D196002F05C0 /* ProtocolCls.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC406A422D9D196002F05C0 /* ProtocolCls.m */; };
+		ADC4505823B24EC40031E50F /* Monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC4505723B24EC40031E50F /* Monitor.m */; };
 		ADCA0ADE236FD2D100DF6AE0 /* CopyDeepCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA0ADD236FD2D100DF6AE0 /* CopyDeepCopyVC.m */; };
 		ADCA0AE0236FD43C00DF6AE0 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCA0ADF236FD43C00DF6AE0 /* Copy.png */; };
 		ADCA0AE3236FEC2A00DF6AE0 /* Copy_Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA0AE2236FEC2A00DF6AE0 /* Copy_Custom.m */; };
@@ -136,6 +137,8 @@
 		ADBFB3532384372900557E0F /* WeakSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakSingleton.m; sourceTree = "<group>"; };
 		ADC406A322D9D196002F05C0 /* ProtocolCls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolCls.h; sourceTree = "<group>"; };
 		ADC406A422D9D196002F05C0 /* ProtocolCls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolCls.m; sourceTree = "<group>"; };
+		ADC4505623B24EC40031E50F /* Monitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monitor.h; sourceTree = "<group>"; };
+		ADC4505723B24EC40031E50F /* Monitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monitor.m; sourceTree = "<group>"; };
 		ADCA0ADC236FD2D100DF6AE0 /* CopyDeepCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyDeepCopyVC.h; sourceTree = "<group>"; };
 		ADCA0ADD236FD2D100DF6AE0 /* CopyDeepCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyDeepCopyVC.m; sourceTree = "<group>"; };
 		ADCA0ADF236FD43C00DF6AE0 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Copy.png; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				AD5F33EE236336C400FDA91F /* MainVC.m */,
 				AD2227B8238FD301001FB83F /* MainPerson.h */,
 				AD2227B9238FD301001FB83F /* MainPerson.m */,
+				ADC4505623B24EC40031E50F /* Monitor.h */,
+				ADC4505723B24EC40031E50F /* Monitor.m */,
 				AD50C14922D47D48009E3270 /* Main.storyboard */,
 				AD50C14C22D47D49009E3270 /* Assets.xcassets */,
 				AD50C14E22D47D49009E3270 /* LaunchScreen.storyboard */,
@@ -502,6 +507,7 @@
 				AD5F33EF236336C400FDA91F /* MainVC.m in Sources */,
 				AD0F6EE62382C79E00AE92B9 /* KVO.m in Sources */,
 				AD5F33EC2363363400FDA91F /* Person.m in Sources */,
+				ADC4505823B24EC40031E50F /* Monitor.m in Sources */,
 				AD55FF7B2386B24200684E6C /* Static.m in Sources */,
 				AD0F6E752382647800AE92B9 /* UIViewController+initializ1.m in Sources */,
 				AD50C17A22D47D8F009E3270 /* Singleton2.m in Sources */,

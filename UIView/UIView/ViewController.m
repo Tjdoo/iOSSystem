@@ -33,7 +33,7 @@
 
 //    [_view4 addCornerRadius:CYCornerInsetsMake(0, 10, 4, 0)];
     // 不会触发离屏渲染
-    _view4.backgroundColor = [UIColor clearColor];
+    _view4.backgroundColor = [UIColor clearColor];  // 需要
     [_view4 drawRectWithRoundedCornerRadius:CYCornerInsetsMake(0, 10, 4, 0)
                                 borderWidth:0
                             backgroundColor:UIColor.redColor

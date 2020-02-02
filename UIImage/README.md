@@ -19,3 +19,12 @@
 5. > 圆角处理
 
 	[[iOS] 图像处理 - 一种高效裁剪图片圆角的算法](https://www.jianshu.com/p/bbb50b2cb7e6)
+	
+6. > 图片缩放
+
+	[图片调整技术](https://www.jianshu.com/p/154b938d2046)
+	
+	
+[图片ImageI/O解码探究](https://www.jianshu.com/p/19e1faddd37f)
+[图片处理：Image I/O 学习笔记](https://www.jianshu.com/p/4dcd6e4bdbf0)
+[处理iOS中照片的方向的问题](https://blog.csdn.net/zhang522802884/article/details/79800617)

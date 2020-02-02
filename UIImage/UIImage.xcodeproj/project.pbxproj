@@ -11,6 +11,14 @@
 		AD2227BE238FE689001FB83F /* CapInsets.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2227BD238FE689001FB83F /* CapInsets.png */; };
 		AD9083D92371BCF2003918ED /* iicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9083D82371BCF2003918ED /* iicon.png */; };
 		AD9083E62372EC1F003918ED /* HookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9083E42372EC1F003918ED /* HookTool.m */; };
+		ADB7AC9723B0F4F700F280C1 /* ScaleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7AC9623B0F4F700F280C1 /* ScaleTool.m */; };
+		ADB7AC9B23B0FFF000F280C1 /* ScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7AC9A23B0FFF000F280C1 /* ScaleVC.m */; };
+		ADB7AC9D23B101B900F280C1 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB7AC9C23B101B900F280C1 /* image.jpg */; };
+		ADB7ACEA23B1B1A600F280C1 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7ACE523B1B1A500F280C1 /* UIImage+Compress.m */; };
+		ADB7ACEB23B1B1A600F280C1 /* UIImage+Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7ACE623B1B1A500F280C1 /* UIImage+Clip.m */; };
+		ADB7ACEC23B1B1A600F280C1 /* UIImage+Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7ACE823B1B1A500F280C1 /* UIImage+Decode.m */; };
+		ADB7ACEF23B1B26E00F280C1 /* ImageIO.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7ACEE23B1B26E00F280C1 /* ImageIO.m */; };
+		ADB7ACF323B1DA3A00F280C1 /* RightMirrored.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB7ACF223B1DA3A00F280C1 /* RightMirrored.png */; };
 		ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842B922D35EAF00FD30D6 /* AppDelegate.m */; };
 		ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842BC22D35EAF00FD30D6 /* ViewController.m */; };
 		ADC842C022D35EAF00FD30D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC842BE22D35EAF00FD30D6 /* Main.storyboard */; };
@@ -18,20 +26,12 @@
 		ADC842C522D35EB000FD30D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC842C322D35EB000FD30D6 /* LaunchScreen.storyboard */; };
 		ADC842C822D35EB000FD30D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842C722D35EB000FD30D6 /* main.m */; };
 		ADC842D222D35EB000FD30D6 /* UIImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842D122D35EB000FD30D6 /* UIImageTests.m */; };
-		ADC842DD22D35EB000FD30D6 /* UIImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC842DC22D35EB000FD30D6 /* UIImageUITests.m */; };
 		ADE6D2F6238E6BB200C531A9 /* UIImage+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */; };
 		ADE6D2F9238E718C00C531A9 /* CornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		ADC842CE22D35EB000FD30D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADC842AD22D35EAF00FD30D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADC842B422D35EAF00FD30D6;
-			remoteInfo = UIImage;
-		};
-		ADC842D922D35EB000FD30D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADC842AD22D35EAF00FD30D6 /* Project object */;
 			proxyType = 1;
@@ -46,6 +46,20 @@
 		AD9083D82371BCF2003918ED /* iicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iicon.png; sourceTree = "<group>"; };
 		AD9083E42372EC1F003918ED /* HookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookTool.m; sourceTree = "<group>"; };
 		AD9083E52372EC1F003918ED /* HookTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookTool.h; sourceTree = "<group>"; };
+		ADB7AC9523B0F4F700F280C1 /* ScaleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaleTool.h; sourceTree = "<group>"; };
+		ADB7AC9623B0F4F700F280C1 /* ScaleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaleTool.m; sourceTree = "<group>"; };
+		ADB7AC9923B0FFF000F280C1 /* ScaleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaleVC.h; sourceTree = "<group>"; };
+		ADB7AC9A23B0FFF000F280C1 /* ScaleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaleVC.m; sourceTree = "<group>"; };
+		ADB7AC9C23B101B900F280C1 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		ADB7ACE423B1B1A500F280C1 /* UIImage+Decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Decode.h"; sourceTree = "<group>"; };
+		ADB7ACE523B1B1A500F280C1 /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
+		ADB7ACE623B1B1A500F280C1 /* UIImage+Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Clip.m"; sourceTree = "<group>"; };
+		ADB7ACE723B1B1A500F280C1 /* UIImage+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compress.h"; sourceTree = "<group>"; };
+		ADB7ACE823B1B1A500F280C1 /* UIImage+Decode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Decode.m"; sourceTree = "<group>"; };
+		ADB7ACE923B1B1A600F280C1 /* UIImage+Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Clip.h"; sourceTree = "<group>"; };
+		ADB7ACED23B1B26E00F280C1 /* ImageIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageIO.h; sourceTree = "<group>"; };
+		ADB7ACEE23B1B26E00F280C1 /* ImageIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageIO.m; sourceTree = "<group>"; };
+		ADB7ACF223B1DA3A00F280C1 /* RightMirrored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightMirrored.png; sourceTree = "<group>"; };
 		ADC842B522D35EAF00FD30D6 /* UIImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC842B822D35EAF00FD30D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADC842B922D35EAF00FD30D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,9 +73,6 @@
 		ADC842CD22D35EB000FD30D6 /* UIImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC842D122D35EB000FD30D6 /* UIImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageTests.m; sourceTree = "<group>"; };
 		ADC842D322D35EB000FD30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADC842D822D35EB000FD30D6 /* UIImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC842DC22D35EB000FD30D6 /* UIImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageUITests.m; sourceTree = "<group>"; };
-		ADC842DE22D35EB000FD30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE6D2F4238E6BB200C531A9 /* UIImage+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CornerRadius.h"; sourceTree = "<group>"; };
 		ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CornerRadius.m"; sourceTree = "<group>"; };
 		ADE6D2F7238E718C00C531A9 /* CornerRadiusVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerRadiusVC.h; sourceTree = "<group>"; };
@@ -83,22 +94,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC842D522D35EB000FD30D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADB7AC9823B0FFAB00F280C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADC842BB22D35EAF00FD30D6 /* ViewController.h */,
+				ADC842BC22D35EAF00FD30D6 /* ViewController.m */,
+				ADE6D2F7238E718C00C531A9 /* CornerRadiusVC.h */,
+				ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */,
+				ADB7AC9923B0FFF000F280C1 /* ScaleVC.h */,
+				ADB7AC9A23B0FFF000F280C1 /* ScaleVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		ADC842AC22D35EAF00FD30D6 = {
 			isa = PBXGroup;
 			children = (
 				ADC842B722D35EAF00FD30D6 /* UIImage */,
 				ADC842D022D35EB000FD30D6 /* UIImageTests */,
-				ADC842DB22D35EB000FD30D6 /* UIImageUITests */,
 				ADC842B622D35EAF00FD30D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +124,6 @@
 			children = (
 				ADC842B522D35EAF00FD30D6 /* UIImage.app */,
 				ADC842CD22D35EB000FD30D6 /* UIImageTests.xctest */,
-				ADC842D822D35EB000FD30D6 /* UIImageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,15 +135,24 @@
 				AD2227BD238FE689001FB83F /* CapInsets.png */,
 				AD9083E52372EC1F003918ED /* HookTool.h */,
 				AD9083E42372EC1F003918ED /* HookTool.m */,
-				ADC842B822D35EAF00FD30D6 /* AppDelegate.h */,
-				ADC842B922D35EAF00FD30D6 /* AppDelegate.m */,
-				ADC842BB22D35EAF00FD30D6 /* ViewController.h */,
-				ADC842BC22D35EAF00FD30D6 /* ViewController.m */,
-				ADE6D2F7238E718C00C531A9 /* CornerRadiusVC.h */,
-				ADE6D2F8238E718C00C531A9 /* CornerRadiusVC.m */,
+				ADB7AC9523B0F4F700F280C1 /* ScaleTool.h */,
+				ADB7AC9623B0F4F700F280C1 /* ScaleTool.m */,
 				ADE6D2F4238E6BB200C531A9 /* UIImage+CornerRadius.h */,
 				ADE6D2F5238E6BB200C531A9 /* UIImage+CornerRadius.m */,
+				ADB7ACE923B1B1A600F280C1 /* UIImage+Clip.h */,
+				ADB7ACE623B1B1A500F280C1 /* UIImage+Clip.m */,
+				ADB7ACF223B1DA3A00F280C1 /* RightMirrored.png */,
+				ADB7ACE723B1B1A500F280C1 /* UIImage+Compress.h */,
+				ADB7ACE523B1B1A500F280C1 /* UIImage+Compress.m */,
+				ADB7ACE423B1B1A500F280C1 /* UIImage+Decode.h */,
+				ADB7ACE823B1B1A500F280C1 /* UIImage+Decode.m */,
+				ADB7ACED23B1B26E00F280C1 /* ImageIO.h */,
+				ADB7ACEE23B1B26E00F280C1 /* ImageIO.m */,
+				ADB7AC9823B0FFAB00F280C1 /* Controller */,
+				ADC842B822D35EAF00FD30D6 /* AppDelegate.h */,
+				ADC842B922D35EAF00FD30D6 /* AppDelegate.m */,
 				AD9083D82371BCF2003918ED /* iicon.png */,
+				ADB7AC9C23B101B900F280C1 /* image.jpg */,
 				ADC842BE22D35EAF00FD30D6 /* Main.storyboard */,
 				ADC842C122D35EB000FD30D6 /* Assets.xcassets */,
 				ADC842C322D35EB000FD30D6 /* LaunchScreen.storyboard */,
@@ -145,15 +169,6 @@
 				ADC842D322D35EB000FD30D6 /* Info.plist */,
 			);
 			path = UIImageTests;
-			sourceTree = "<group>";
-		};
-		ADC842DB22D35EB000FD30D6 /* UIImageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ADC842DC22D35EB000FD30D6 /* UIImageUITests.m */,
-				ADC842DE22D35EB000FD30D6 /* Info.plist */,
-			);
-			path = UIImageUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,24 +209,6 @@
 			productReference = ADC842CD22D35EB000FD30D6 /* UIImageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADC842D722D35EB000FD30D6 /* UIImageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADC842E722D35EB000FD30D6 /* Build configuration list for PBXNativeTarget "UIImageUITests" */;
-			buildPhases = (
-				ADC842D422D35EB000FD30D6 /* Sources */,
-				ADC842D522D35EB000FD30D6 /* Frameworks */,
-				ADC842D622D35EB000FD30D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADC842DA22D35EB000FD30D6 /* PBXTargetDependency */,
-			);
-			name = UIImageUITests;
-			productName = UIImageUITests;
-			productReference = ADC842D822D35EB000FD30D6 /* UIImageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,10 +222,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					ADC842CC22D35EB000FD30D6 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = ADC842B422D35EAF00FD30D6;
-					};
-					ADC842D722D35EB000FD30D6 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = ADC842B422D35EAF00FD30D6;
 					};
@@ -249,7 +242,6 @@
 			targets = (
 				ADC842B422D35EAF00FD30D6 /* UIImage */,
 				ADC842CC22D35EB000FD30D6 /* UIImageTests */,
-				ADC842D722D35EB000FD30D6 /* UIImageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,19 +255,14 @@
 				AD9083D92371BCF2003918ED /* iicon.png in Resources */,
 				ADC842C522D35EB000FD30D6 /* LaunchScreen.storyboard in Resources */,
 				AD2227BC238FE003001FB83F /* README.md in Resources */,
+				ADB7AC9D23B101B900F280C1 /* image.jpg in Resources */,
+				ADB7ACF323B1DA3A00F280C1 /* RightMirrored.png in Resources */,
 				ADC842C222D35EB000FD30D6 /* Assets.xcassets in Resources */,
 				ADC842C022D35EAF00FD30D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ADC842CB22D35EB000FD30D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADC842D622D35EB000FD30D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,9 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9083E62372EC1F003918ED /* HookTool.m in Sources */,
+				ADB7ACEC23B1B1A600F280C1 /* UIImage+Decode.m in Sources */,
 				ADC842BD22D35EAF00FD30D6 /* ViewController.m in Sources */,
 				ADE6D2F6238E6BB200C531A9 /* UIImage+CornerRadius.m in Sources */,
 				ADC842C822D35EB000FD30D6 /* main.m in Sources */,
+				ADB7AC9723B0F4F700F280C1 /* ScaleTool.m in Sources */,
+				ADB7ACEF23B1B26E00F280C1 /* ImageIO.m in Sources */,
+				ADB7AC9B23B0FFF000F280C1 /* ScaleVC.m in Sources */,
+				ADB7ACEA23B1B1A600F280C1 /* UIImage+Compress.m in Sources */,
+				ADB7ACEB23B1B1A600F280C1 /* UIImage+Clip.m in Sources */,
 				ADC842BA22D35EAF00FD30D6 /* AppDelegate.m in Sources */,
 				ADE6D2F9238E718C00C531A9 /* CornerRadiusVC.m in Sources */,
 			);
@@ -306,14 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC842D422D35EB000FD30D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADC842DD22D35EB000FD30D6 /* UIImageUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -321,11 +306,6 @@
 			isa = PBXTargetDependency;
 			target = ADC842B422D35EAF00FD30D6 /* UIImage */;
 			targetProxy = ADC842CE22D35EB000FD30D6 /* PBXContainerItemProxy */;
-		};
-		ADC842DA22D35EB000FD30D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADC842B422D35EAF00FD30D6 /* UIImage */;
-			targetProxy = ADC842D922D35EB000FD30D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyn.ps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyn.ps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UIImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,6 +486,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/UIImage/";
 				INFOPLIST_FILE = UIImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +506,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XF9U638XV;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/UIImage/";
 				INFOPLIST_FILE = UIImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,40 +518,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIImage.app/UIImage";
-			};
-			name = Release;
-		};
-		ADC842E822D35EB000FD30D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIImageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.UIImageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UIImage;
-			};
-			name = Debug;
-		};
-		ADC842E922D35EB000FD30D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIImageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.UIImageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UIImage;
 			};
 			name = Release;
 		};
@@ -597,15 +547,6 @@
 			buildConfigurations = (
 				ADC842E522D35EB000FD30D6 /* Debug */,
 				ADC842E622D35EB000FD30D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADC842E722D35EB000FD30D6 /* Build configuration list for PBXNativeTarget "UIImageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADC842E822D35EB000FD30D6 /* Debug */,
-				ADC842E922D35EB000FD30D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
